@@ -31,13 +31,17 @@
     ,"contentsdb":{
         "slide":[
             {
-                "src": ""
+                "link": ""
+                ,"cls": "slide0"
             }
             ,{
-                "src": ""
+                "link": ""
+                ,"cls": "slide1"
+
             }
             ,{
-                "src": ""
+                "link": ""
+                ,"cls": "slide2"
             }
         ]
         ,"event":[

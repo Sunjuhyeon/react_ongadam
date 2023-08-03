@@ -29,32 +29,48 @@
 }
 
 body {
-    #eventBanner {
-        p {
-            &::before {
-                content: "";
-                margin-right: 0.5em;
-                display: inline-block;
-                background-image: url(../img/kakaoIcon.png);
-                background-size: 1.5em 1.5em;
-                width: 1.5rem;
-                height: 1.5rem;
+    #hd{
+        #eventBanner {
+            p {
+                &::before {
+                    content: "";
+                    margin-right: 0.5em;
+                    display: inline-block;
+                    background-image: url(../img/kakaoIcon.png);
+                    background-size: 1.5em 1.5em;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
             }
         }
     }
-
-    #event {
-        ul {
-            .event0 a{
-                background-image: url(../img/event0.png);
+    #contents{
+        #slide{
+            .mySwiper{
+                    .slide0{
+                        background-image: url(/img/event0.png);                
+                    }
+                    .slide1{
+                        background-image: url(/img/event0.png);                
+                    }
+                    .slide2{
+                        background-image: url(/img/event0.png);                
+                    }
+                }
             }
-
-            .event1 a{
-                background-image: url(../img/event1.png);
-            }
-
-            .event2 a{
-                background-image: url(../img/event2.png);
+        #event {
+            ul {
+                .event0 a{
+                    background-image: url(../img/event0.png);
+                }
+    
+                .event1 a{
+                    background-image: url(../img/event1.png);
+                }
+    
+                .event2 a{
+                    background-image: url(../img/event2.png);
+                }
             }
         }
     }

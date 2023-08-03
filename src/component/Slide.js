@@ -22,9 +22,8 @@ function Slide(props) {
                 {
                     props.info.contentsdb.slide.map((v, i) => {
                         return(
-                            <SwiperSlide>
-                                <a href="">
-                                    <img src={v.src} alt="" />
+                            <SwiperSlide className={v.cls}>
+                                <a href={v.link} >
                                 </a>
                             </SwiperSlide>
                         )
