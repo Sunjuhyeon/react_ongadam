@@ -1,0 +1,147 @@
+:root {
+    --body-bg: #FAFAFA;
+    --main-green: #337005;
+    --font-yellow: #FFE500;
+    --font-gray: #9C9494;
+    --event-nav-bg: #FFDEB9;
+    --event-nav-font: #FC2947;
+    --sub-gray: #D9D9D9;
+}
+
+.sentence1 span{
+    font-size: 5vw;
+    font-weight: 900;
+    color: var(--main-green);
+}
+.sentence1 p{
+    font-size: 3vw;
+    font-weight: 700;
+}
+@media(max-width:767px) {
+    .sentence1 span {
+        display: flex;
+        justify-content: center;
+        transform: translateX(-30%);
+        font-size: 6vw;
+    }
+
+        .sentence1 p {
+        display: flex;
+        justify-content: center;
+        font-size: 4vw;
+    }
+}
+
+hr {
+    width: 80vw;
+    border: 0;
+    height: 2px;
+    background-color: var(--sub-gray);
+}
+
+.aboutUs-card li{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+.AUcard{
+    border: 1px solid var(--sub-gray);
+}
+.AUcard img{
+    max-width: 30vw;
+}
+.aboutSentence{
+    margin-left: 0.5rem;
+    width: 100%;
+    height: 200px;
+}
+.aboutSentence p{
+    margin: 0;
+}
+.M-br {
+    display: none;
+}
+.cardTopic{
+    color: var(--font-gray);
+    font-weight: 300;
+    font-size: 1rem;
+}
+.cardName{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.cardContent{
+    display: block;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+.cardContent span{
+    color: var(--main-green);
+    font-weight: 700;
+}
+@media(max-width:767px) {
+    .aboutUsCard{
+        justify-content: center;
+    }
+    .AUcard img{
+            max-width: 40vw;
+    }
+
+    .aboutSentence{
+        width: 200px;
+        height: 100%;
+    }
+    .M-br{
+        display: block;
+    }
+}
+@media(min-width:1400px){
+    .AUcard img{
+        max-width: 20vw;
+    }
+}
+
+
+.sentence2 img{
+    width: 7rem;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(1rem);
+}
+@media(max-width:767px){
+    .sentence2 img{
+        display: none;
+    }
+}
+
+.sentence2Title{
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 400;
+    margin: 0;
+}
+.sentence2Title span{
+    font-weight: 700;
+}
+@media(min-width:767px){
+    .sentence2Title{
+        font-size: 3rem;
+    }
+}
+
+.sentence2Content{
+    border: 1px solid var(--sub-gray);
+    text-align: center;
+    max-width: 70vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+@media(min-width:1400px){
+    .sentence2Content{
+        max-width: 50vw;
+    }
+}
