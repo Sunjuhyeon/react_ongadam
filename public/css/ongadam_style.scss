@@ -8,41 +8,51 @@
     --sub-gray: #D9D9D9;
 }
 
-*{
+* {
     font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 400;
-    color: #333;
-    ul, li{
+    font-weight: 300;
+    h1, h2, h3, h4, h5, h6, p, span, em{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 300;
+    }
+    ul,
+    li {
         list-style: none;
     }
-    a{
+
+    a {
         text-decoration: none;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 300;
         color: #333;
     }
 }
 
-body{
-    #eventBanner{
-            p{  
-                &::before{
-                    content: "";
-                    margin-right: 0.5em;
-                    display: inline-block;
-                    background-image: url(../img/kakaoIcon.png);
-                    background-size: 1.5em 1.5em;
-                    width: 1.5rem;
-                    height: 1.5rem;
-                }
+body {
+    #eventBanner {
+        p {
+            &::before {
+                content: "";
+                margin-right: 0.5em;
+                display: inline-block;
+                background-image: url(../img/kakaoIcon.png);
+                background-size: 1.5em 1.5em;
+                width: 1.5rem;
+                height: 1.5rem;
             }
+        }
     }
-    #event{
-        ul{
+
+    #event {
+        ul {
             .event0 a{
                 background-image: url(../img/event0.png);
             }
+
             .event1 a{
                 background-image: url(../img/event1.png);
             }
+
             .event2 a{
                 background-image: url(../img/event2.png);
             }

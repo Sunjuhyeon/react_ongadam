@@ -19,9 +19,17 @@ function Slide(props) {
                 modules={[Pagination, Navigation]}
                 className={`mySwiper ${slide.swiper}`}
             >
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
+                {
+                    props.info.contentsdb.slide.map((v, i) => {
+                        return(
+                            <SwiperSlide>
+                                <a href="">
+                                    <img src={v.src} alt="" />
+                                </a>
+                            </SwiperSlide>
+                        )
+                    })
+                }
             </Swiper>
         </section>
     );

@@ -10,14 +10,20 @@
 
 * {
   font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
-  color: #333;
+  font-weight: 300;
 }
-* ul, * li {
+* h1, * h2, * h3, * h4, * h5, * h6, * p, * span, * em {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+}
+* ul,
+* li {
   list-style: none;
 }
 * a {
   text-decoration: none;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
   color: #333;
 }
 

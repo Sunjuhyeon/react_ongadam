@@ -39,7 +39,7 @@ hr {
     background-color: var(--sub-gray);
 }
 
-.aboutUs-card li{
+.aboutUsCard li{
     display: flex;
     justify-content: center;
     margin: 0.5rem;
@@ -58,7 +58,7 @@ hr {
 .aboutSentence p{
     margin: 0;
 }
-.M-br {
+.Mbr{
     display: none;
 }
 .cardTopic{
@@ -74,11 +74,13 @@ hr {
     display: block;
     font-weight: 500;
     font-size: 1rem;
-    padding-top: 1rem;
 }
 .cardContent span{
     color: var(--main-green);
     font-weight: 700;
+}
+.cardcontent1cls{
+    padding-top: 0.5rem;
 }
 @media(max-width:767px) {
     .aboutUsCard{
@@ -92,7 +94,7 @@ hr {
         width: 200px;
         height: 100%;
     }
-    .M-br{
+    .cardContent br{
         display: block;
     }
 }
@@ -113,7 +115,9 @@ hr {
 }
 @media(max-width:767px){
     .sentence2 img{
-        display: none;
+        width: 20%;
+        height: auto;
+        padding-bottom: 0.5rem;
     }
 }
 
