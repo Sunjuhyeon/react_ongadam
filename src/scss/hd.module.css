@@ -10,20 +10,29 @@
 /* 띠배너 */
 .topBanner{
     height: 100%;
-    background-color: var(--main-green);
+    background-color: #142e00;
 }
 .topBanner p{
-    color: var(--font-yellow);
+    color: white;
     display: flex;
     font-weight: 300;
     align-items: center;
 }
 .topBanner span{
-    color: var(--font-yellow);
+    color: white;
     font-weight: 100;
     font-size: .9rem;
 }
 /* 상단 */
+#headSection{
+    background: linear-gradient(to top,rgba(255, 255, 255, 0), #181818);
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.mainhead{
+    max-width: 1100px;
+}
 .logoImg{
     width: 10rem;
     height: auto;
@@ -31,25 +40,19 @@
 .menu li{
     display: none;
     margin-right: 3rem;
-    font-weight: 700;
 }
-.eventMenu{
-    background-color: var(--event-nav-bg);
-    border-radius: 5px;
-
+.menu li a{
+    font-weight: 500;
+    color: rgb(243, 243, 243);
+    font-size: 1.2rem;
 }
-.eventMenu a{
-    color: var(--event-nav-font);
-    font-weight: 700;
-}
-
 /* 햄버거 메뉴 */
 .hamMenu{
     font-size: 2rem;
 }
 
 /* 반응형 */
-@media(min-width:767px) {
+@media(min-width:992px) {
     .hamMenu{
         display: none;
     }
