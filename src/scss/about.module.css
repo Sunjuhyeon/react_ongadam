@@ -10,12 +10,12 @@
 
 .sentence1 span{
     font-size: 5vw;
-    font-weight: 900;
+    font-weight: 600;
     color: var(--main-green);
 }
 .sentence1 p{
     font-size: 3vw;
-    font-weight: 700;
+    font-weight: 400;
 }
 @media(max-width:767px) {
     .sentence1 span {
