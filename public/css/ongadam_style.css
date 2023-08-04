@@ -9,12 +9,20 @@
 }
 
 * {
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 300;
+  font-family: "Pretendard";
+  font-weight: 400;
 }
-* h1, * h2, * h3, * h4, * h5, * h6, * p, * span, * em {
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 300;
+* h1,
+* h2,
+* h3,
+* h4,
+* h5,
+* h6,
+* p,
+* span,
+* em {
+  font-family: "Pretendard";
+  font-weight: 400;
 }
 * ul,
 * li {
@@ -22,8 +30,8 @@
 }
 * a {
   text-decoration: none;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 300;
+  font-family: "Pretendard";
+  font-weight: 400;
   color: #333;
 }
 
@@ -31,26 +39,52 @@ body #hd #eventBanner p::before {
   content: "";
   margin-right: 0.5em;
   display: inline-block;
-  background-image: url(../img/kakaoIcon.png);
+  background-image: url(/img/kakaoIcon.png);
   background-size: 1.5em 1.5em;
   width: 1.5rem;
   height: 1.5rem;
 }
-body #contents #slide .mySwiper .slide0 {
-  background-image: url(/img/event0.png);
+body #contents #slide .swiper {
+  background-color: black;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-body #contents #slide .mySwiper .slide1 {
-  background-image: url(/img/event0.png);
+body #contents #slide .swiper .swiper-slide {
+  opacity: 0.5;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-body #contents #slide .mySwiper .slide2 {
-  background-image: url(/img/event0.png);
+body #contents #slide .swiper .swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+body #contents #slide .swiper .swiper-slide a {
+  max-width: 1100px;
+  height: 50vh;
+}
+body #contents #slide .swiper .swiper-slide .slide0 {
+  background-image: url(../img/slide0.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #contents #slide .swiper .swiper-slide .slide1 {
+  background-image: url(../img/slide1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #contents #slide .swiper .swiper-slide .slide2 {
+  background-image: url(../img/slide2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 body #contents #event ul .event0 a {
-  background-image: url(../img/event0.png);
+  background-image: url(/img/event0.png);
 }
 body #contents #event ul .event1 a {
-  background-image: url(../img/event1.png);
+  background-image: url(/img/event1.png);
 }
 body #contents #event ul .event2 a {
-  background-image: url(../img/event2.png);
+  background-image: url(/img/event2.png);
 }/*# sourceMappingURL=ongadam_style.css.map */
