@@ -2,23 +2,34 @@
     "hddb": {
         "banner": [
             {
-                "title": "카카오 채널 추가하고 3000원 할인쿠폰 받자!!",
-                "sub": "클릭 시 카카오 채널 바로가기",
-                "link": ""
+                "title": "카카오 채널 추가하고 | 원 할인쿠폰 받자!!",
+                "em": 3000,
+                "sub": "",
+                "link": "",
+                "target": "_blank"
+            }
+        ],
+        "Mbanner": [
+            {
+                "title": "카카오 채널 추가하고 <br> | 원 할인쿠폰 받자!!",
+                "em": 3000,
+                "sub": "",
+                "link": "",
+                "target": "_blank"
             }
         ],
         "navi": [
             {
                 "title": "이벤트 소식",
-                "link": ""
+                "link": "#event"
             },
             {
                 "title": "About Us",
-                "link": ""
+                "link": "#about"
             },
             {
                 "title": "솔직리뷰",
-                "link": ""
+                "link": "#review"
             }
         ],
         "special": [
