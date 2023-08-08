@@ -8,20 +8,32 @@
     --sub-gray: #D9D9D9;
 }
 /* 띠배너 */
+@media(max-width:991px){
+    .eventBanner{
+        display: none;
+    }
+}
+
 .topBanner{
-    height: 100%;
+    height: 50px;
     background-color: #142e00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .topBanner p{
+    margin-bottom: 0;
     color: white;
     display: flex;
-    font-weight: 300;
     align-items: center;
+    font-weight: 300;
 }
-.topBanner span{
-    color: white;
-    font-weight: 100;
-    font-size: .9rem;
+.scrollBanner{
+    display: none;
+}
+.scrollBannerAct{
+    transition: 1s;
+    display: block;
 }
 /* 상단 */
 #headSection{
@@ -33,13 +45,23 @@
 .mainhead{
     max-width: 1100px;
 }
+.sub{
+    width: 30px;
+}
+@media(min-width:991px){
+    .sub{
+        display: none;
+    }
+}
+.mainhead h1{
+    margin-bottom: 0;
+}
 .logoImg{
     width: 10rem;
     height: auto;
 }
 .menu li{
-    display: none;
-    margin-right: 3rem;
+    margin-left: 3rem;
 }
 .menu li a{
     font-weight: 500;
@@ -47,17 +69,3 @@
     font-size: 1.2rem;
 }
 /* 햄버거 메뉴 */
-.hamMenu{
-    font-size: 2rem;
-}
-
-/* 반응형 */
-@media(min-width:992px) {
-    .hamMenu{
-        display: none;
-    }
-
-    .menu li{
-        display: block;
-    }
-}
