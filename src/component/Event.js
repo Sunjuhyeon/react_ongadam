@@ -3,15 +3,15 @@ import e from '../scss/event.module.css'
 
 function Event(props) {
   return (
-    <section id={props.id} className={`${e.section} container-lg py-5`}>
-        <ul className={`d-md-flex`}>
-            {
-              props.info.contentsdb.event.map((v, i) => {
-                return(
-                  <li className={`${v.cls} col`}><a href=""></a></li>
-                )
-              })
-            }
+    <section id={props.id} className={`${e.section} py-5`}>
+        <ul className={`d-lg-flex`}>
+            <li className={`col-lg-6`}>
+              <div  className={`event1`}><a href=""></a></div>
+            </li>
+            <li className={`col-lg-6`}>
+              <div i className={`event0`}><a href=""></a></div>
+              <div i className={`event2`}><a href=""></a></div>
+            </li>
         </ul>
     </section>
   )
