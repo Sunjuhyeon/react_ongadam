@@ -1,0 +1,10 @@
+.buttonBox{
+    position: fixed;
+    bottom: 20%;
+    right: 10px;
+    cursor: pointer;
+}
+.svg{
+    width: 56px;
+    height: 56px;
+}
