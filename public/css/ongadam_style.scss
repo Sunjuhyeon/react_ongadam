@@ -44,31 +44,36 @@
 }
 
 body {
-    &.scroll{
-        #hd{
+    &.scroll {
+        #hd {
             background-color: rgb(255, 255, 255, 0.8);
-            #eventBanner{
+
+            #eventBanner {
                 margin-top: -50px;
                 transition: 0.5s;
             }
-            section{
+
+            section {
                 background: none;
-                h1{
-                    svg{
-                        path{
-                            fill:#141414
+
+                h1 {
+                    svg {
+                        path {
+                            fill: #141414
                         }
                     }
                 }
-                .navbar-toggler.collapsed{
-                    .navbar-toggler-icon{
+
+                .navbar-toggler.collapsed {
+                    .navbar-toggler-icon {
                         background-image: url(/img/hamMenuBlack.png);
                     }
                 }
-                #navbar-nav{
-                    ul{
-                        li{
-                            a{
+
+                #navbar-nav {
+                    ul {
+                        li {
+                            a {
                                 color: #141414;
                             }
                         }
@@ -77,22 +82,36 @@ body {
             }
         }
     }
-    &.hamMenu{
-        #hd{
-            section{
-                h1{
-                    z-index: 1;
-                    svg{
-                        path{
-                            fill:#141414
+
+    &.hamMenu {
+        overflow-y: hidden;
+
+        #hd {
+            section {
+                h1 {
+
+                    svg {
+                        path {
+                            fill: #141414
                         }
                     }
                 }
             }
+            .navbar-toggler {
+                .navbar-toggler-icon {
+                    background-image: url(/img/XbuttonBlack.png);
+                    transition: 1s;
+                }
+            }
+            #navbar-nav {
+                right: 0 !important;
+            }
         }
     }
+
     #hd {
-        transition:  0.5s;
+        transition: 0.5s;
+
         #eventBanner {
             p {
                 &::before {
@@ -106,58 +125,73 @@ body {
                 }
             }
         }
-        section{
+
+        section {
             position: relative;
-            h1{
-                svg{
+
+            h1 {
+                z-index: 1;
+
+                svg {
                     width: 10rem;
                     fill: white;
+
+                    path {
+                        transition-property: fill;
+                        transition-duration: 0.5s;
+                        transition-timing-function: linear;
+                    }
                 }
             }
-            .navbar-toggler{
+
+            .navbar-toggler {
                 z-index: 1;
                 border: none;
                 padding: 0;
                 color: white;
-                .navbar-toggler-icon{
-                    background-image: url(/img/XbuttonBlack.png);
-                }
+
             }
-            .navbar-toggler.collapsed{
-                .navbar-toggler-icon{
+
+            .navbar-toggler.collapsed {
+                .navbar-toggler-icon {
                     background-image: url(/img/hamMenuWhite.png);
                 }
             }
-            .navbar-toggler:focus{
+
+            .navbar-toggler:focus {
                 border: none;
                 box-shadow: none;
             }
-            #navbar-nav{
-                @media(max-width:991px){
+
+            #navbar-nav {
+                @media(max-width:991px) {
+                    //노출된모습
                     position: fixed;
                     display: flex;
                     justify-content: center !important;
                     align-items: center;
-                    right: 0;
+
                     top: 0;
                     bottom: 0;
                     background-color: white;
                     width: 100%;
                     height: 100vh;
                     transition: 0.5s;
+                    right: -100% !important;
+
                     ul {
                         flex-direction: column;
-    
+
                         li {
                             margin-left: 0;
                             margin: 1rem 0;
-    
+
                             a {
                                 color: #141414 !important;
                                 font-size: 2.5rem;
                                 font-weight: 200;
                                 transition: 0.5s;
-    
+
                                 &:hover {
                                     font-weight: 400;
                                 }
@@ -165,21 +199,21 @@ body {
                         }
                     }
                 }
-                &.collapse:not(.show){
-                    right: -100%;
-                }
+
+
             }
         }
     }
 
     #contents {
-        #MEventBanner{
-            @media(min-width:991px){
+        #MEventBanner {
+            @media(min-width:991px) {
                 display: none;
             }
-            div{
-                p{
-                    &::after{
+
+            div {
+                p {
+                    &::after {
                         content: "";
                         margin-right: 0.5em;
                         display: inline-block;
@@ -194,6 +228,7 @@ body {
                 }
             }
         }
+
         #slide {
             .swiper {
                 background-color: black;
@@ -211,6 +246,14 @@ body {
                     a {
                         max-width: 1100px;
                         height: 50vh;
+
+                        @media(min-width:991px) {
+                            height: 60vh;
+                        }
+
+                        @media(min-width:1400px) {
+                            height: 70vh;
+                        }
                     }
 
                     .slide0 {
@@ -240,24 +283,40 @@ body {
 
         #event {
             ul {
-                div a {
-                    background-size: contain;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    display: block;
-                    padding-top: 80%;
+                li{
+                    .lgE{
+                    }
+                    .smE{
+                    }
+                    div a {
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    
+                    .event0 a {
+                        background-image: url(/img/event1.png);
+                    }
+    
+                    .event1 a {
+                        background-image: url(/img/event0.png);
+                    }
+    
+                    .event2 a {
+                        background-image: url(/img/event2.png);
+                    }
                 }
+            }
+        }
 
-                .event0 a {
-                    background-image: url(/img/event0.png);
-                }
-
-                .event1 a {
-                    background-image: url(/img/event1.png);
-                }
-
-                .event2 a {
-                    background-image: url(/img/event2.png);
+        #button{
+            svg{
+                circle{
+                    stroke-dasharray: 0;
+                    stroke-dashoffset: 0;
+                    stroke-width: 2;
+                    stroke: #141414;
+                    fill: none;
                 }
             }
         }

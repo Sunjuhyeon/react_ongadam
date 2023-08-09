@@ -37,13 +37,23 @@
 }
 /* 상단 */
 #headSection{
-    background: linear-gradient(to top,rgba(255, 255, 255, 0), #181818);
+    background: linear-gradient(to top,rgba(255, 255, 255, 0), rgb(24, 24, 24, 0.7));
     height: 70px;
     display: flex;
     align-items: center;
 }
 .mainhead{
-    max-width: 1100px;
+    max-width: 50vw;
+}
+@media(max-width:1400px){
+    .mainhead{
+        max-width: 70vw;
+    }
+}
+@media(max-width:991px){
+    .mainhead{
+        max-width: 90vw;
+    }
 }
 .sub{
     width: 30px;

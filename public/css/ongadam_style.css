@@ -59,11 +59,18 @@ body.scroll #hd section .navbar-toggler.collapsed .navbar-toggler-icon {
 body.scroll #hd section #navbar-nav ul li a {
   color: #141414;
 }
-body.hamMenu #hd section h1 {
-  z-index: 1;
+body.hamMenu {
+  overflow-y: hidden;
 }
 body.hamMenu #hd section h1 svg path {
   fill: #141414;
+}
+body.hamMenu #hd .navbar-toggler .navbar-toggler-icon {
+  background-image: url(/img/XbuttonBlack.png);
+  transition: 1s;
+}
+body.hamMenu #hd #navbar-nav {
+  right: 0 !important;
 }
 body #hd {
   transition: 0.5s;
@@ -80,18 +87,23 @@ body #hd #eventBanner p::before {
 body #hd section {
   position: relative;
 }
+body #hd section h1 {
+  z-index: 1;
+}
 body #hd section h1 svg {
   width: 10rem;
   fill: white;
+}
+body #hd section h1 svg path {
+  transition-property: fill;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
 }
 body #hd section .navbar-toggler {
   z-index: 1;
   border: none;
   padding: 0;
   color: white;
-}
-body #hd section .navbar-toggler .navbar-toggler-icon {
-  background-image: url(/img/XbuttonBlack.png);
 }
 body #hd section .navbar-toggler.collapsed .navbar-toggler-icon {
   background-image: url(/img/hamMenuWhite.png);
@@ -106,13 +118,13 @@ body #hd section .navbar-toggler:focus {
     display: flex;
     justify-content: center !important;
     align-items: center;
-    right: 0;
     top: 0;
     bottom: 0;
     background-color: white;
     width: 100%;
     height: 100vh;
     transition: 0.5s;
+    right: -100% !important;
   }
   body #hd section #navbar-nav ul {
     flex-direction: column;
@@ -130,9 +142,6 @@ body #hd section .navbar-toggler:focus {
   body #hd section #navbar-nav ul li a:hover {
     font-weight: 400;
   }
-}
-body #hd section #navbar-nav.collapse:not(.show) {
-  right: -100%;
 }
 @media (min-width: 991px) {
   body #contents #MEventBanner {
@@ -168,6 +177,16 @@ body #contents #slide .swiper .swiper-slide a {
   max-width: 1100px;
   height: 50vh;
 }
+@media (min-width: 991px) {
+  body #contents #slide .swiper .swiper-slide a {
+    height: 60vh;
+  }
+}
+@media (min-width: 1400px) {
+  body #contents #slide .swiper .swiper-slide a {
+    height: 70vh;
+  }
+}
 body #contents #slide .swiper .swiper-slide .slide0 {
   background-image: url(../img/slide0.png);
   background-position: center;
@@ -186,19 +205,24 @@ body #contents #slide .swiper .swiper-slide .slide2 {
   background-size: cover;
   background-repeat: no-repeat;
 }
-body #contents #event ul div a {
+body #contents #event ul li div a {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  display: block;
-  padding-top: 80%;
 }
-body #contents #event ul .event0 a {
-  background-image: url(/img/event0.png);
-}
-body #contents #event ul .event1 a {
+body #contents #event ul li .event0 a {
   background-image: url(/img/event1.png);
 }
-body #contents #event ul .event2 a {
+body #contents #event ul li .event1 a {
+  background-image: url(/img/event0.png);
+}
+body #contents #event ul li .event2 a {
   background-image: url(/img/event2.png);
+}
+body #contents #button svg circle {
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  stroke-width: 2;
+  stroke: #141414;
+  fill: none;
 }/*# sourceMappingURL=ongadam_style.css.map */
