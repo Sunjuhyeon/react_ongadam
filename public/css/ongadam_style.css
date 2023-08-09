@@ -205,16 +205,38 @@ body #contents #slide .swiper .swiper-slide .slide2 {
   background-size: cover;
   background-repeat: no-repeat;
 }
-body #contents #event ul li div a {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+body #contents #event ul li {
+  background-color: #f2f2f2;
+}
+body #contents #event ul li .event0 {
+  width: 600px;
+}
+@media (max-width: 991px) {
+  body #contents #event ul li .event0 {
+    width: 70vw;
+  }
 }
 body #contents #event ul li .event0 a {
-  background-image: url(/img/event1.png);
+  background-image: url(/img/event0.png);
+}
+body #contents #event ul li .event1 {
+  width: 300px;
+}
+@media (max-width: 991px) {
+  body #contents #event ul li .event1 {
+    width: 70vw;
+  }
 }
 body #contents #event ul li .event1 a {
-  background-image: url(/img/event0.png);
+  background-image: url(/img/event1.png);
+}
+body #contents #event ul li .event2 {
+  width: 300px;
+}
+@media (max-width: 991px) {
+  body #contents #event ul li .event2 {
+    width: 70vw;
+  }
 }
 body #contents #event ul li .event2 a {
   background-image: url(/img/event2.png);
