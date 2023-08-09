@@ -20,7 +20,7 @@ function Slide(props) {
                 spaceBetween={0}
                 breakpoints={{
                     650:{
-                        slidesPerView: 1.2
+                        slidesPerView: 1.3
                     }
                     ,1400: {
                         slidesPerView : 1.8
