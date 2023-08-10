@@ -8,6 +8,7 @@
     --sub-gray: #D9D9D9;
 }
 
+/* 온가담, 삶의 따듯함과 편안함을 더해줍니다.(about섹션 최상위)  */
 .sentence1 span{
     font-size: 5vw;
     font-weight: 600;
@@ -17,21 +18,6 @@
     font-size: 3vw;
     font-weight: 400;
 }
-@media(max-width:767px) {
-    .sentence1 span {
-        display: flex;
-        justify-content: center;
-        transform: translateX(-30%);
-        font-size: 6vw;
-    }
-
-        .sentence1 p {
-        display: flex;
-        justify-content: center;
-        font-size: 4vw;
-    }
-}
-
 hr {
     width: 80vw;
     border: 0;
@@ -39,6 +25,7 @@ hr {
     background-color: var(--sub-gray);
 }
 
+/* about섹션 회사 소개 카드 */
 .aboutUsCard li{
     display: flex;
     justify-content: center;
@@ -57,6 +44,7 @@ hr {
 }
 .aboutSentence p{
     margin: 0;
+    margin-bottom: 0.5rem !important;
 }
 .Mbr{
     display: none;
@@ -69,6 +57,10 @@ hr {
 .cardName{
     font-weight: 700;
     font-size: 1.5rem;
+    line-height: 1;
+}
+.cardcontent0cls{
+    line-height: 1.2rem;
 }
 .cardContent{
     display: block;
@@ -81,8 +73,71 @@ hr {
 }
 .cardcontent1cls{
     padding-top: 0.5rem;
+    line-height: 1.2rem;
 }
+
+/* 온가담 유통시스템 (about섹션 최하위) */
+.sentence2 img{
+    width: 7rem;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(1rem);
+}
+
+.sentence2Title{
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: 400;
+    margin: 0;
+}
+.sentence2Title span{
+    font-weight: 700;
+}
+
+.sentence2Content{
+    border: 1px solid var(--sub-gray);
+    text-align: center;
+    width: 70vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 3rem 0;
+}
+.sentence2Content p{
+    font-size: clamp(1rem, 4vw, 1.7rem);
+    font-weight: 500;
+    color: #5a5a5a;
+    margin: 0;
+}
+.sentence2Content span{
+    font-weight: 700;
+    color: #333 !important;
+}
+
+@media(max-width:576px){
+    .aboutSentence {
+        width: 55vw !important;
+        margin-left: 0.2rem !important;
+        
+    }
+}
+
 @media(max-width:767px) {
+    .sentence1 span {
+        display: flex;
+        justify-content: center;
+        transform: translateX(-30%);
+        font-size: 6vw;
+    }
+
+    .sentence1 p {
+        display: flex;
+        justify-content: center;
+        font-size: 4vw;
+    }
+
     .aboutUsCard{
         justify-content: center;
     }
@@ -97,52 +152,22 @@ hr {
     .cardContent br{
         display: block;
     }
-}
-@media(min-width:1400px){
-    .AUcard img{
-        max-width: 20vw;
-    }
-}
 
-
-.sentence2 img{
-    width: 7rem;
-    display: block;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transform: translateY(1rem);
-}
-@media(max-width:767px){
     .sentence2 img{
         width: 20%;
         height: auto;
         padding-bottom: 0.5rem;
     }
-}
-
-.sentence2Title{
-    text-align: center;
-    font-size: 5vw;
-    font-weight: 400;
-    margin: 0;
-}
-.sentence2Title span{
-    font-weight: 700;
-}
-@media(min-width:767px){
-    .sentence2Title{
-        font-size: 3rem;
+    .sentence2Content{
+        width: 90vw;
+        padding: 1rem 0;
     }
 }
 
-.sentence2Content{
-    border: 1px solid var(--sub-gray);
-    text-align: center;
-    max-width: 70vw;
-    left: 0;
-    right: 0;
-    margin: auto;
+@media(min-width:1400px) {
+    .AUcard img {
+        max-width: 20vw;
+    }
 }
 @media(min-width:1400px){
     .sentence2Content{
