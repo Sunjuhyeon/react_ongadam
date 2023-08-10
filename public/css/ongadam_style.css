@@ -34,6 +34,9 @@
   font-weight: 400;
   color: #333;
 }
+* a:hover {
+  color: #333;
+}
 
 .price {
   font-family: "Montserrat", sans-serif;
@@ -215,11 +218,8 @@ body #contents #event ul {
 }
 @media (max-width: 576px) {
   body #contents #event ul {
-    width: 90vw;
+    width: 95vw;
   }
-}
-body #contents #event ul .smE {
-  background-color: #edece8;
 }
 body #contents #event ul li .event0 {
   width: 600px;
@@ -231,7 +231,7 @@ body #contents #event ul li .event0 {
 }
 @media (max-width: 576px) {
   body #contents #event ul li .event0 {
-    width: 90vw;
+    width: 95vw;
   }
 }
 body #contents #event ul li .event0 a {
@@ -247,7 +247,7 @@ body #contents #event ul li .event1 {
 }
 @media (max-width: 576px) {
   body #contents #event ul li .event1 {
-    width: 90vw;
+    width: 95vw;
   }
 }
 body #contents #event ul li .event1 a {
@@ -263,7 +263,7 @@ body #contents #event ul li .event2 {
 }
 @media (max-width: 576px) {
   body #contents #event ul li .event2 {
-    width: 90vw;
+    width: 95vw;
   }
 }
 body #contents #event ul li .event2 a {

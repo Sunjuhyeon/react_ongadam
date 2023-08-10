@@ -36,6 +36,9 @@
         font-weight: 400;
         color: #333;
     }
+    a:hover{
+        color: #333;
+    }
 }
 
 .price {
@@ -288,21 +291,17 @@ body {
                             width: 70vw;
                 }
                 @media(max-width:576px){
-                            width: 90vw;
+                            width: 95vw;
                         }
-                .smE{
-                    background-color: #edece8;
-                }
                 li{
                     // background-color: #f2f2f2;
-
                     .event0{
                         width: 600px;
                         @media(max-width:991px){
                             width: 70vw;
                         }
                         @media(max-width:576px){
-                            width: 90vw;
+                            width: 95vw;
                         }
                         a {
                             background-image: url(/img/event0.png);
@@ -315,7 +314,7 @@ body {
                             width: 70vw;
                         }
                         @media(max-width:576px){
-                            width: 90vw;
+                            width: 95vw;
                         }
                         a {
                             background-image: url(/img/event1.png);
@@ -327,7 +326,7 @@ body {
                             width: 70vw;
                         }
                         @media(max-width:576px){
-                            width: 90vw;
+                            width: 95vw;
                         }
                         a {
                             background-image: url(/img/event2.png);
