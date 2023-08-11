@@ -335,6 +335,77 @@ body {
                 }
             }
         }
+        #about{
+            #aboutyoutube{
+                .textContent{
+                    p{
+                        font-family: 'PuradakGentleGothicR', serif;
+                        font-weight: normal;
+                    }
+                }
+
+            }
+            .youtube{
+                padding-bottom: 56.25%;
+                position: relative;
+                width: 100%;
+                iframe{
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            #aboutinsta{
+                .swiper{
+                    .swiper-wrapper{
+                        padding: 0 1rem;
+                        .swiper-slide{
+                            width: 150px !important;
+                            height: 150px !important;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            @media(min-width:768px){
+                                width: 200px !important;
+                                height: 200px !important;
+                            }
+                        }
+                        .insta0{
+                            background-image: url(/img/instaA0.png);
+                        }
+                        .insta1{
+                            background-image: url(/img/instaB1.png);
+                        }
+                        .insta2{
+                            background-image: url(/img/instaC2.png);
+                        }
+                        .insta3{
+                            background-image: url(/img/instaC1.png);
+                        }
+                        .insta4{
+                            background-image: url(/img/instaA2.png);
+                        }
+                        .insta5{
+                            background-image: url(/img/instaB0.png);
+                        }
+                        .insta6{
+                            background-image: url(/img/instaA1.png);
+                        }
+                        .insta7{
+                            background-image: url(/img/instaC3.png);
+                        }
+                        .insta8{
+                            background-image: url(/img/instaA3.png);
+                        }
+                        .insta9{
+                            background-image: url(/img/instaC0.png);
+                        }
+                    }
+                }
+            }
+        }
 
         #button{
             svg{

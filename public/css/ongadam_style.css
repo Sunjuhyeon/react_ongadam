@@ -269,6 +269,68 @@ body #contents #event ul li .event2 {
 body #contents #event ul li .event2 a {
   background-image: url(/img/event2.png);
 }
+body #contents #about #aboutyoutube .textContent p {
+  font-family: "PuradakGentleGothicR", serif;
+  font-weight: normal;
+}
+body #contents #about .youtube {
+  padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+}
+body #contents #about .youtube iframe {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+body #contents #about #aboutinsta .swiper .swiper-wrapper {
+  padding: 0 1rem;
+}
+body #contents #about #aboutinsta .swiper .swiper-wrapper .swiper-slide {
+  width: 150px !important;
+  height: 150px !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  body #contents #about #aboutinsta .swiper .swiper-wrapper .swiper-slide {
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+body #contents #about #aboutinsta .swiper .swiper-wrapper .insta0 {
+  background-image: url(/img/instaA0.png);
+}
+body #contents #about #aboutinsta .swiper .swiper-wrapper .insta1 {
+  background-image: url(/img/instaB1.png);
+}
+body #contents #about #aboutinsta .swiper .swiper-wrapper .insta2 {
+  background-image: url(/img/instaC2.png);
+}
+body #contents #about #aboutinsta .swiper .swiper-wrapper .insta3 {
+  background-image: url(/img/instaC1.png);
+}
+body #contents #about #aboutinsta .swiper .swiper-wrapper .insta4 {
+  background-image: url(/img/instaA2.png);
+}
+body #contents #about #aboutinsta .swiper .swiper-wrapper .insta5 {
+  background-image: url(/img/instaB0.png);
+}
+body #contents #about #aboutinsta .swiper .swiper-wrapper .insta6 {
+  background-image: url(/img/instaA1.png);
+}
+body #contents #about #aboutinsta .swiper .swiper-wrapper .insta7 {
+  background-image: url(/img/instaC3.png);
+}
+body #contents #about #aboutinsta .swiper .swiper-wrapper .insta8 {
+  background-image: url(/img/instaA3.png);
+}
+body #contents #about #aboutinsta .swiper .swiper-wrapper .insta9 {
+  background-image: url(/img/instaC0.png);
+}
 body #contents #button svg circle {
   stroke-dasharray: 0;
   stroke-dashoffset: 0;
