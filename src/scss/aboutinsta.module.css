@@ -1,0 +1,32 @@
+.name{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    background-color: rgb(244, 244, 244);
+}
+.swiperBox{
+    background-color: rgb(244, 244, 244);
+}
+.bgtitle{
+    position: absolute;
+    font-size: 8rem;
+    color: rgb(51, 112, 5, 0.5);
+    bottom: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+@media(max-width:576px){
+    .bgtitle{
+        bottom: 77% !important;
+        font-size: 3rem !important;
+    }
+}
+@media(max-width:768px){
+    .bgtitle{
+        bottom: 72%;
+        font-size: 5rem;
+    }
+}
