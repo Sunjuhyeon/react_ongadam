@@ -132,6 +132,38 @@
                     "cardContent1cls": "pt-3"
                 }
             ]
+            ,"aboutInsta": [
+                {
+                    "cls": "insta0"
+                },
+                {
+                    "cls": "insta1"
+                },
+                {
+                    "cls": "insta2"
+                },
+                {
+                    "cls": "insta3"
+                },
+                {
+                    "cls": "insta4"
+                },
+                {
+                    "cls": "insta5"
+                },
+                {
+                    "cls": "insta6"
+                },
+                {
+                    "cls": "insta7"
+                },
+                {
+                    "cls": "insta8"
+                },
+                {
+                    "cls": "insta9"
+                }
+            ]
         }
     }
 }
