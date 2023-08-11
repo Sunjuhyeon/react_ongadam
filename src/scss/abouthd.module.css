@@ -10,12 +10,12 @@
 
 /* 온가담, 삶의 따듯함과 편안함을 더해줍니다.(about섹션 최상위)  */
 .sentence1 span{
-    font-size: 5vw;
+    font-size: clamp(3rem, 5vw, 5rem);
     font-weight: 600;
     color: var(--main-green);
 }
 .sentence1 p{
-    font-size: 3vw;
+    font-size: clamp(2.5rem, 4vw, 4rem);
     font-weight: 400;
 }
 hr {
@@ -42,9 +42,9 @@ hr {
     width: 100%;
     height: 200px;
 }
-.aboutSentence p{
+.aboutSentence .cardTopic{
     margin: 0;
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0.2rem !important;
 }
 .Mbr{
     display: none;
@@ -60,7 +60,7 @@ hr {
     line-height: 1;
 }
 .cardcontent0cls{
-    line-height: 1.2rem;
+    line-height: 1.1rem;
 }
 .cardContent{
     display: block;
@@ -73,7 +73,13 @@ hr {
 }
 .cardcontent1cls{
     padding-top: 0.5rem;
-    line-height: 1.2rem;
+    line-height: 1.1rem;
+}
+.aboutSentence .cardContent{
+    margin-bottom: 0;
+}
+.aboutSentence .cardcontent1cls>p{
+    margin-bottom: 0;
 }
 
 /* 온가담 유통시스템 (about섹션 최하위) */
@@ -116,11 +122,25 @@ hr {
     color: #333 !important;
 }
 
+@media(max-width:400px){
+    .aboutSentence{
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
+
 @media(max-width:576px){
     .aboutSentence {
-        width: 55vw !important;
+        width: 52vw !important;
         margin-left: 0.2rem !important;
-        
+        height: 150px !important;
+    }
+    .aboutSentence .cardTopic{
+        margin-bottom: 0.2rem !important;
+    }
+    .aboutSentence .cardName{
+        margin-bottom: 0.1rem;
+        font-size: 1.3rem;
     }
 }
 
