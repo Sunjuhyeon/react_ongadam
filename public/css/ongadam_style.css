@@ -163,6 +163,15 @@ body #contents #MEventBanner div p::after {
   height: 2rem;
   transform: translate(0, 0.5rem);
 }
+body #contents #review .review_reviewsection__ZdOxo .review_reviewwrap__WUQDI .review_reviewbox__1Pj-x:not(:first-of-type) {
+  margin-left: -20%;
+}
+body #contents #review .review_reviewsection__ZdOxo .review_reviewwrap__WUQDI .review_reviewbox__1Pj-x:nth-child(even) {
+  transform: translateY(55%);
+}
+body #contents #review .review_reviewsection__ZdOxo .review_reviewwrap__WUQDI .review_reviewbox__1Pj-x:nth-child(odd) {
+  transform: translateY(-55%);
+}
 body #contents #slide .swiper {
   background-color: black;
   height: -moz-fit-content;
@@ -224,6 +233,11 @@ body #contents #event ul {
 body #contents #event ul li .event0 {
   width: 600px;
 }
+@media (max-width: 1210px) {
+  body #contents #event ul li .event0 {
+    width: 450px;
+  }
+}
 @media (max-width: 991px) {
   body #contents #event ul li .event0 {
     width: 70vw;
@@ -240,6 +254,11 @@ body #contents #event ul li .event0 a {
 body #contents #event ul li .event1 {
   width: 300px;
 }
+@media (max-width: 1210px) {
+  body #contents #event ul li .event1 {
+    width: 225px;
+  }
+}
 @media (max-width: 991px) {
   body #contents #event ul li .event1 {
     width: 70vw;
@@ -255,6 +274,11 @@ body #contents #event ul li .event1 a {
 }
 body #contents #event ul li .event2 {
   width: 300px;
+}
+@media (max-width: 1210px) {
+  body #contents #event ul li .event2 {
+    width: 225px;
+  }
 }
 @media (max-width: 991px) {
   body #contents #event ul li .event2 {

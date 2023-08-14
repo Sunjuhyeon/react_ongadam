@@ -232,6 +232,22 @@ body {
             }
         }
 
+        #review{
+            .review_reviewsection__ZdOxo{
+                .review_reviewwrap__WUQDI{
+                    .review_reviewbox__1Pj-x:not(:first-of-type){
+                        margin-left: -20%;
+                    }
+                    .review_reviewbox__1Pj-x:nth-child(even){
+                        transform: translateY(55%);
+                    }
+                    .review_reviewbox__1Pj-x:nth-child(odd){
+                        transform: translateY(-55%);
+                    }
+                }
+            }
+        }
+
         #slide {
             .swiper {
                 background-color: black;
@@ -297,6 +313,9 @@ body {
                     // background-color: #f2f2f2;
                     .event0{
                         width: 600px;
+                        @media(max-width:1210px){
+                            width: 450px;
+                        }
                         @media(max-width:991px){
                             width: 70vw;
                         }
@@ -310,6 +329,9 @@ body {
                     }
                     .event1{
                         width: 300px;
+                        @media(max-width:1210px){
+                                width: 225px;
+                        }
                         @media(max-width:991px){
                             width: 70vw;
                         }
@@ -322,6 +344,9 @@ body {
                     }
                     .event2{
                         width: 300px;
+                        @media(max-width:1210px){
+                                width: 225px;
+                        }
                         @media(max-width:991px){
                             width: 70vw;
                         }
