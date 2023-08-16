@@ -1,5 +1,7 @@
 import React from 'react'
 import re from '../scss/review.module.css'
+import { Controller, Scene } from 'react-scrollmagic';
+
 
 function Review(props) {
   return (

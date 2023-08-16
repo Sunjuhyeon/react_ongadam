@@ -163,15 +163,6 @@ body #contents #MEventBanner div p::after {
   height: 2rem;
   transform: translate(0, 0.5rem);
 }
-body #contents #review .review_reviewsection__ZdOxo .review_reviewwrap__WUQDI .review_reviewbox__1Pj-x:not(:first-of-type) {
-  margin-left: -20%;
-}
-body #contents #review .review_reviewsection__ZdOxo .review_reviewwrap__WUQDI .review_reviewbox__1Pj-x:nth-child(even) {
-  transform: translateY(55%);
-}
-body #contents #review .review_reviewsection__ZdOxo .review_reviewwrap__WUQDI .review_reviewbox__1Pj-x:nth-child(odd) {
-  transform: translateY(-55%);
-}
 body #contents #slide .swiper {
   background-color: black;
   height: -moz-fit-content;

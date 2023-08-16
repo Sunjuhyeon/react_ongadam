@@ -39,10 +39,7 @@
     font-size: 1.5rem;
 }
 .reviewwrap{
-    width: 100%;
     height: 70%;
-    display: flex;
-    align-items: center;
 }
 .reviewbox{
     padding: 1rem 1.5rem;
