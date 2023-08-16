@@ -163,6 +163,22 @@ body #contents #MEventBanner div p::after {
   height: 2rem;
   transform: translate(0, 0.5rem);
 }
+body #contents #review .swiper .swiper-pagination,
+body #contents #review .swiper .swiper-pagination-progressbar.swiper-pagination-vertical,
+body #contents #review .swiper .swiper-vertical > .swiper-pagination-progressbar,
+body #contents #review .swiper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  position: absolute;
+  top: 0;
+  right: 0 !important;
+  left: auto !important;
+  width: 3px !important;
+}
+body #contents #review .swiper .swiper-pagination {
+  background-color: #ebebeb;
+}
+body #contents #review .swiper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #9C9494 !important;
+}
 body #contents #slide .swiper {
   background-color: black;
   height: -moz-fit-content;

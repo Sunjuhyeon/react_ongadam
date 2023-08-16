@@ -231,7 +231,28 @@ body {
                 }
             }
         }
-
+        #review{
+            .swiper{
+                .swiper-wrapper{
+                }
+                .swiper-pagination,
+                .swiper-pagination-progressbar.swiper-pagination-vertical,
+                .swiper-vertical>.swiper-pagination-progressbar,
+                .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+                    position: absolute;
+                    top: 0;
+                    right: 0 !important;
+                    left: auto !important;
+                    width: 3px !important;
+                }
+                .swiper-pagination{
+                    background-color: #ebebeb;
+                }
+                .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+                    background-color: #9C9494 !important;
+                }
+            }
+        }
         #slide {
             .swiper {
                 background-color: black;
