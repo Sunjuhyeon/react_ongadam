@@ -4,19 +4,27 @@ import abI from '../scss/aboutinsta.module.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
-import { FreeMode } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 
 export const AboutInsta = (props) => {
+    
   return (
     <section id={props.id} className={`py-5 position-relative`}>
         <span className={`${abI.bgtitle}`}>FOLLOW US</span>
-        <h2 className={`${abI.name}`}>@ongadam_official</h2>
+        <h2 className={`${abI.name}`}>
+            <a href="">@ongadam_official</a>
+        </h2>
         <div className={`${abI.swiperBox}`}>
             <Swiper
                 slidesPerView="auto"
                 spaceBetween={10}
-                freeMode={true}
-                modules={[FreeMode]}
+                autoplay={{
+                    delay: 0,
+                    disableOnInteraction: false,
+                }}
+                speed={2000}
+                loop={true}
+                modules={[Autoplay]}
                 className="mySwiper"
             >
                 {
