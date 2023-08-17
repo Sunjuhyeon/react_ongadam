@@ -5,7 +5,10 @@ function AboutHd(props) {
     return (
         <section id={props.id} className={`py-5`}>
             <div>
-                <div className={`${ab.sentence1} d-md-flex justify-content-center align-items-end`}>
+                <div data-aos="fade-up"
+                     data-aos-duration="1000" 
+                     className={`${ab.sentence1} d-md-flex justify-content-center align-items-end`}
+                >
                     <span>온가담,</span>
                     <p className={`mb-0`}>&nbsp;&nbsp;삶의 따듯함과 편안함을 더해줍니다.</p>
                 </div>

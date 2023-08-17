@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import re from '../scss/review.module.css'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,11 +7,12 @@ import 'swiper/css/pagination';
 import { Pagination, FreeMode, Mousewheel } from 'swiper/modules';
 
 
+
 function Review(props) {
     return (
         <section id={props.id} className={` ${re.section}`}>
             <div className='px-lg-0 d-flex flex-column flex-lg-row justify-content-lg-between'>
-                <div className={`${re.merit} col-lg-5`}>
+                <div className={`${re.merit} col-lg-5 pb-lg-0 pb-3`}>
                     <div className={`${re.mTitle}`}>
                         <p className={`mb-0`}>고객 구매 만족도</p>
                         <div className={`d-flex`}>
@@ -22,7 +23,7 @@ function Review(props) {
                             <i class="bi bi-star-fill"></i>
                         </div>
                     </div>
-                    <div className={`${re.meritlist}`}>
+                    <div data-aos="fade-up" className={`${re.meritlist}`}>
                         {
                             props.info.contentsdb.review.checkbox.map((v, i) => {
                                 return (
@@ -47,9 +48,18 @@ function Review(props) {
                         }}
                         slidesPerView={'auto'}
                         freeMode={true}
-                        mousewheel={true}
+                        mousewheel={{
+                            releaseOnEdges: "true"
+                        }}
                         modules={[Pagination, FreeMode, Mousewheel]}
                         className={`mySwiper ${re.swiper}`}
+                        breakpoints={{
+                            991: {
+                                mousewheel:{
+                                    releaseOnEdges:false
+                                }
+                            }
+                        }}
                     >
                         {
                             props.info.contentsdb.review.reviewbox.map((v, i) => {
@@ -70,7 +80,7 @@ function Review(props) {
                                             </div>
                                             <div className={`${re.body} d-flex`}>
                                                 <img src={v.src} alt="review" />
-                                                <div className={`${re.txt}`}>
+                                                <div className={`${re.txt} ms-sm-3`}>
                                                     {
                                                         v.re.split("<br>").map((val, idx) => {
                                                             return (
