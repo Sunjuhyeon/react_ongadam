@@ -35,7 +35,8 @@ function Slide(props) {
                         return (
                             <SwiperSlide className={`${slide.swiperslide}`}>
                                 <a href={v.link} className={`${v.cls}`}>
-                                    {/* <img className={`${slide.img}`} src={v.src} alt="slide" /> */}
+                                    <p className={`mb-0 ${v.titlecls} ${slide.title}`}>{v.title}</p>
+                                    <p className={`mb-0 ${slide.subtitle}`}>{v.subtitle}</p>
                                 </a>
                             </SwiperSlide>
                         )
