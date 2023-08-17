@@ -184,6 +184,32 @@ body #contents #slide .swiper {
   height: -moz-fit-content;
   height: fit-content;
 }
+body #contents #slide .swiper .swiper-button-prev {
+  background-image: url(/img/icon_arrow1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body #contents #slide .swiper .swiper-button-prev::after {
+  display: none;
+}
+@media (min-width: 1400px) {
+  body #contents #slide .swiper .swiper-button-prev {
+    left: 20%;
+  }
+}
+body #contents #slide .swiper .swiper-button-next {
+  background-image: url(/img/icon_arrow0.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body #contents #slide .swiper .swiper-button-next::after {
+  display: none;
+}
+@media (min-width: 1400px) {
+  body #contents #slide .swiper .swiper-button-next {
+    right: 20%;
+  }
+}
 body #contents #slide .swiper .swiper-slide {
   opacity: 0.5;
   height: -moz-fit-content;
@@ -206,6 +232,21 @@ body #contents #slide .swiper .swiper-slide a {
     height: 70vh;
   }
 }
+body #contents #slide .swiper .swiper-slide a .title0 {
+  font-family: "SBAggro", sans-serif;
+  font-weight: 500;
+  color: rgb(0, 154, 36);
+}
+body #contents #slide .swiper .swiper-slide a .title1 {
+  font-family: "Binggrae-Two", serif;
+  font-weight: normal;
+  color: rgb(0, 126, 96);
+}
+body #contents #slide .swiper .swiper-slide a .title2 {
+  font-family: "BMDOHYEON", sans-serif;
+  font-weight: normal;
+  color: #005db9;
+}
 body #contents #slide .swiper .swiper-slide .slide0 {
   background-image: url(../img/slide0.png);
   background-position: center;
@@ -223,6 +264,12 @@ body #contents #slide .swiper .swiper-slide .slide2 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+body #contents #event {
+  background-image: url(/img/main_event_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 body #contents #event ul {
   margin: 0 auto;
@@ -317,6 +364,7 @@ body #contents #about .youtube iframe {
   height: 100%;
 }
 body #contents #about #aboutinsta .swiper .swiper-wrapper {
+  transition-timing-function: linear;
   padding: 0 1rem;
 }
 body #contents #about #aboutinsta .swiper .swiper-wrapper .swiper-slide {

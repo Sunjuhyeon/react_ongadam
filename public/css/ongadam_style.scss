@@ -257,14 +257,34 @@ body {
             .swiper {
                 background-color: black;
                 height: fit-content;
-
+                .swiper-button-prev{
+                    background-image: url(/img/icon_arrow1.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    &::after{
+                        display: none;
+                    }
+                    @media(min-width:1400px){
+                        left: 20%;
+                    }
+                }
+                .swiper-button-next{
+                    background-image: url(/img/icon_arrow0.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    &::after{
+                        display: none;
+                    }
+                    @media(min-width:1400px){
+                        right: 20%;
+                    }
+                }
                 .swiper-slide {
                     opacity: 0.5;
                     height: fit-content;
 
                     &.swiper-slide-active {
                         opacity: 1;
-
                     }
 
                     a {
@@ -277,6 +297,23 @@ body {
 
                         @media(min-width:1400px) {
                             height: 70vh;
+                        }
+
+                        .title0{
+                            font-family: 'SBAggro', sans-serif;
+                            font-weight: 500;
+                            color: rgb(0, 154, 36);
+
+                        }
+                        .title1{
+                            font-family: 'Binggrae-Two', serif;
+                            font-weight: normal;
+                            color: rgb(0, 126, 96);
+                        }
+                        .title2{
+                            font-family: 'BMDOHYEON', sans-serif;
+                            font-weight: normal;
+                            color: #005db9;
                         }
                     }
 
@@ -306,6 +343,10 @@ body {
         }
 
         #event {
+            background-image: url(/img/main_event_bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
             ul {
                 margin: 0 auto;
                 @media(max-width:991px){
@@ -390,6 +431,7 @@ body {
             #aboutinsta{
                 .swiper{
                     .swiper-wrapper{
+                        transition-timing-function: linear;
                         padding: 0 1rem;
                         .swiper-slide{
                             width: 150px !important;
