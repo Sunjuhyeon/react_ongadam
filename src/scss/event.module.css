@@ -1,3 +1,18 @@
+.section{
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+.titlename p{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+}
+.titlename p em{
+    font-weight: 700;
+}
+
 .section ul{
     margin: 0;
     padding: 0;
@@ -72,5 +87,14 @@
     }
     .smtext{
         display: block !important;
+        background-color: white;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+@media(max-width:991px) {
+    .section {
+            padding-top: 4rem;
+            padding-bottom: 2rem;
     }
 }
