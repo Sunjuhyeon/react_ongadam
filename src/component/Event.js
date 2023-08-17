@@ -3,7 +3,10 @@ import e from '../scss/event.module.css'
 
 function Event(props) {
   return (
-    <section id={props.id} className={`${e.section} py-5`}>
+    <section id={props.id} className={`${e.section}`}>
+        <div className={`${e.titlename}`}>
+            <p>ongadam <em>EVENT</em></p>
+        </div>
         <ul className={`d-lg-flex`}>
             <li className='lgE'>
                 <div>
