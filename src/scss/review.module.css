@@ -36,14 +36,14 @@
     padding-bottom: 0.5rem;
 }
 .merit .meritlist img {
-    height: 25px;
+    height: 20px;
     width: auto;
 }
 
 .merit .meritlist span {
     font-size: 1.3rem;
     margin-left: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     color: rgb(57, 57, 57);
 }
 
