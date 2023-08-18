@@ -90,8 +90,8 @@
                 "subtitle": "이번 여름 땀걱정 NO!"
             }
         ],
-        "review" : {
-            "reviewbox":[
+        "review": {
+            "reviewbox": [
                 {
                     "name": "자사몰구매자 김*솔 님",
                     "src": "/img/review0.jpg",
@@ -118,40 +118,39 @@
                     "re": "완전 조용해요~~<br>아이가 있어서 소음이 큰 가전은 못쓰고 있는데 53데시벨이라고 해서 사봤어요. 결과는 완전 최고~!!"
                 }
             ],
-            "checkbox":[
+            "checkbox": [
                 {
-                    "src" : "/img/checkbox.png",
+                    "src": "/img/checkbox.png",
                     "title": "미니사이즈"
                 },
                 {
-                    "src" : "/img/checkbox.png",
+                    "src": "/img/checkbox.png",
                     "title": "저렴한 유지비용"
                 },
                 {
-                    "src" : "/img/checkbox.png",
+                    "src": "/img/checkbox.png",
                     "title": "옷 손상 최소화"
                 },
                 {
-                    "src" : "/img/checkbox.png",
+                    "src": "/img/checkbox.png",
                     "title": "신발 건조"
                 },
                 {
-                    "src" : "/img/checkbox.png",
+                    "src": "/img/checkbox.png",
                     "title": "UV살균 램프"
                 },
                 {
-                    "src" : "/img/checkbox.png",
+                    "src": "/img/checkbox.png",
                     "title": "제습, 탈취"
                 },
                 {
-                    "src" : "/img/checkbox.png",
+                    "src": "/img/checkbox.png",
                     "title": "저소음"
                 }
             ]
-
         },
         "event": {
-            "lgE":[
+            "lgE": [
                 {
                     "title": "라온숨 X 온가담",
                     "subtitle": "체험하고 커피 받으러가자!",
@@ -161,8 +160,8 @@
                     "smtext": "남양주 인기카페 <em>라온숨 X 온가담</em> 콜라보!!",
                     "smtextsub": "남양주 인기카페에서 무료체험&무료커피 맛보러 GoGo~"
                 }
-            ]
-            ,"smE":[
+            ],
+            "smE": [
                 {
                     "title": "캠핑에 미치다 X 온가담",
                     "subtitle": "최대 48%세일 오픈!!",
@@ -209,67 +208,108 @@
                     "cardContent1": "온가담이 <br>고민을 덜어드립니다.",
                     "cardContent1cls": "pt-3"
                 }
-            ]
-            ,"aboutInsta": [
+            ],
+            "aboutInsta": [
                 {
-                    "cls": "insta0"
+                    "src": "/img/instaC1.png",
+                    "popup": {
+                        "title": "작은 가방에도 쏙! 들어가는 여름 외출 필수템!!<br>이번 여름은 땀걱정 하지말자구요~!",
+                        "hash": "#여름필수템 #손풍기 #쿨링패드 #땀걱정노노",
+                        "src": "img/instaC1.png",
+                        "product": "쿨링패드손풍기",
+                        "price": "12,000원"
+
+                    }
                 },
                 {
-                    "cls": "insta1"
+                    "src": "/img/instaA1.png",
+                    "popup": {
+                        "title": "바지도 온가담 소형스타일러로 쾌적하게 관리해요!!",
+                        "hash": "#여름필수템 #손풍기 #쿨링패드 #땀걱정노노",
+                        "src": "img/instaA1.png",
+                        "product": "소형스타일러",
+                        "price": "12,000원"
+                    }
                 },
                 {
-                    "cls": "insta2"
+                    "src": "/img/instaA2.png",
+                    "popup": {
+                        "title": "신발 자주 빨기 힘드시죠? 온가담 소형스타일러로 손쉽고 쾌적하게 관리해요!",
+                        "hash": "#여름필수템 #손풍기 #쿨링패드 #땀걱정노노",
+                        "src": "img/instaA2.png",
+                        "product": "쿨링패드손풍기",
+                        "price": "12,000원"
+                    }
                 },
                 {
-                    "cls": "insta3"
+                    "src": "/img/instaA3.png",
+                    "popup": {
+                        "title": "작은 가방에도 쏙! 들어가는 여름 외출 필수템!!<br>이번 여름은 땀걱정 하지말자구요~!",
+                        "hash": "#여름필수템 #손풍기 #쿨링패드 #땀걱정노노",
+                        "src": "img/instaA3.png",
+                        "product": "쿨링패드손풍기",
+                        "price": "12,000원"
+                    }
                 },
                 {
-                    "cls": "insta4"
+                    "src": "/img/instaB0.png",
+                    "popup": {
+                        "title": "작은 가방에도 쏙! 들어가는 여름 외출 필수템!!<br>이번 여름은 땀걱정 하지말자구요~!",
+                        "hash": "#여름필수템 #손풍기 #쿨링패드 #땀걱정노노",
+                        "src": "img/instaB0.png",
+                        "product": "쿨링패드손풍기",
+                        "price": "12,000원"
+                    }
                 },
                 {
-                    "cls": "insta5"
+                    "src": "/img/instaB1.png",
+                    "popup": {
+                        "title": "작은 가방에도 쏙! 들어가는 여름 외출 필수템!!<br>이번 여름은 땀걱정 하지말자구요~!",
+                        "hash": "#여름필수템 #손풍기 #쿨링패드 #땀걱정노노",
+                        "src": "img/instaB1.png",
+                        "product": "쿨링패드손풍기",
+                        "price": "12,000원"
+                    }
                 },
                 {
-                    "cls": "insta6"
+                    "src": "/img/instaC0.png",
+                    "popup": {
+                        "title": "작은 가방에도 쏙! 들어가는 여름 외출 필수템!!<br>이번 여름은 땀걱정 하지말자구요~!",
+                        "hash": "#여름필수템 #손풍기 #쿨링패드 #땀걱정노노",
+                        "src": "img/instaC0.png",
+                        "product": "쿨링패드손풍기",
+                        "price": "12,000원"
+                    }
                 },
                 {
-                    "cls": "insta7"
+                    "src": "/img/instaA0.png",
+                    "popup": {
+                        "title": "작은 가방에도 쏙! 들어가는 여름 외출 필수템!!<br>이번 여름은 땀걱정 하지말자구요~!",
+                        "hash": "#여름필수템 #손풍기 #쿨링패드 #땀걱정노노",
+                        "src": "img/instaA0.png",
+                        "product": "쿨링패드손풍기",
+                        "price": "12,000원"
+                    }
                 },
                 {
-                    "cls": "insta8"
+                    "src": "/img/instaC2.png",
+                    "popup": {
+                        "title": "작은 가방에도 쏙! 들어가는 여름 외출 필수템!!<br>이번 여름은 땀걱정 하지말자구요~!",
+                        "hash": "#여름필수템 #손풍기 #쿨링패드 #땀걱정노노",
+                        "src": "img/instaC2.png",
+                        "product": "쿨링패드손풍기",
+                        "price": "12,000원"
+                    }
                 },
                 {
-                    "cls": "insta9"
-                },
-                {
-                    "cls": "insta0"
-                },
-                {
-                    "cls": "insta1"
-                },
-                {
-                    "cls": "insta2"
-                },
-                {
-                    "cls": "insta3"
-                },
-                {
-                    "cls": "insta4"
-                },
-                {
-                    "cls": "insta5"
-                },
-                {
-                    "cls": "insta6"
-                },
-                {
-                    "cls": "insta7"
-                },
-                {
-                    "cls": "insta8"
-                },
-                {
-                    "cls": "insta9"
+                    "src": "/img/instaC3.png",
+                    "popup": {
+                        "title": "작은 가방에도 쏙! 들어가는 여름 외출 필수템!!<br>이번 여름은 땀걱정 하지말자구요~!",
+                        "hash": "#여름필수템 #손풍기 #쿨링패드 #땀걱정노노",
+                        "src": "img/instaC3.png",
+                        "product": "쿨링패드손풍기",
+                        "price": "12,000원"
+                    }
                 }
             ]
         }
