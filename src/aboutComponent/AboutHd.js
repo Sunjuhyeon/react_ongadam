@@ -3,7 +3,7 @@ import ab from '../scss/abouthd.module.css'
 
 function AboutHd(props) {
     return (
-        <section id={props.id} className={`py-5`}>
+        <section id={props.id} className={`${ab.section}`}>
             <div>
                 <div data-aos="fade-up"
                      data-aos-duration="1000" 
