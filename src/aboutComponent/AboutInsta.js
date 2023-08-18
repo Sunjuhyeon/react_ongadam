@@ -3,41 +3,61 @@ import abI from '../scss/aboutinsta.module.css'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
-import { Autoplay } from 'swiper/modules';
+import { FreeMode } from 'swiper/modules';
+
+import Instar from './Instar';
 
 export const AboutInsta = (props) => {
-    
-  return (
-    <section id={props.id} className={`py-5 position-relative`}>
-        <span className={`${abI.bgtitle}`}>FOLLOW US</span>
-        <h2 className={`${abI.name}`}>
-            <a href="">@ongadam_official</a>
-        </h2>
-        <div className={`${abI.swiperBox}`}>
-            <Swiper
-                slidesPerView="auto"
-                spaceBetween={10}
-                autoplay={{
-                    delay: 0,
-                    disableOnInteraction: false,
-                }}
-                speed={2000}
-                loop={true}
-                modules={[Autoplay]}
-                className="mySwiper"
-            >
-                {
-                    props.info.contentsdb.about.aboutInsta.map((v, i) => {
-                        return(
-                            <SwiperSlide className={`${v.cls}`}></SwiperSlide>
-                        )
-                    })
-                }
-            </Swiper>
-        </div>
-    </section>
-  )
+    const [showpopup, setShowpopup] = useState(-1);
+
+    const openPopup = (index) => {
+        setShowpopup(index);
+    };
+
+    const closePopup = () => {
+        setShowpopup(-1);
+    }
+
+    return (
+        <section id={props.id} className={`${abI.sectionbg} position-relative`}>
+            <div className='sectioncontainer'>
+                <div className={`${abI.title} d-sm-flex`}>
+                    <p className={`${abI.titlename} order-sm-2 ms-sm-3`}>@ongadam_official</p>
+                    <p className={`${abI.maintitle} order-sm-1`}>INSTAGRAM</p>
+                </div>
+                <div>
+                    <Swiper
+                        slidesPerView="auto"
+                        spaceBetween={0}
+                        freeMode={true}
+                        modules={[FreeMode]}
+                        className="mySwiper"
+                    >
+                        {
+                            props.info.contentsdb.about.aboutInsta.map((v, i) => {
+                                return (
+                                    <SwiperSlide onClick={() => setShowpopup(i)}>
+                                        <div>
+                                            <img src={v.src} alt="instaImg" />
+                                        </div>
+                                    </SwiperSlide>
+                                )
+                            })
+                        }
+                    </Swiper>
+                    {showpopup > -1 && (
+                        <Instar 
+                        className={`${abI.headpop}`} 
+                        info={props.info.contentsdb.about.aboutInsta} 
+                        num={showpopup}
+                        closePopup={closePopup}
+                        >
+                        </Instar>
+                        )}
+                </div>
+            </div>
+        </section>
+    )
 }
 
 export default AboutInsta
