@@ -7,11 +7,11 @@ import info from './data/info.json'
 
 function App(props) {
   return (
-    <>
-    <Hd id="hd" info={info}></Hd>
-    <Contents id="contents" info={info}></Contents>
-    <Ft id="ft" info={info}></Ft>
-    </>
+    <div id="#top">
+      <Hd id="hd" info={info}></Hd>
+      <Contents id="contents" info={info}></Contents>
+      <Ft id="ft" info={info}></Ft>
+    </div>
   );
 }
 
