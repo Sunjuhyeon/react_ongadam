@@ -8,6 +8,7 @@ import Event from '../component/Event'
 import About from '../component/About'
 import Review from '../component/Review'
 import EventBanner from '../component/EventBanner'
+import Form from '../component/Form'
 import Button from '../component/Button'
 
 function Contents(props) {
@@ -21,6 +22,7 @@ function Contents(props) {
             <Review id="review" info={props.info}></Review>
             <Event id="event" info={props.info}></Event>
             <About id="about" info={props.info}></About>
+            <Form id="form" info={props.info}></Form>
             <Button id="button"></Button>
         </div>
     );
