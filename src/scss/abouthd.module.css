@@ -9,6 +9,11 @@
 }
 
 /* 온가담, 삶의 따듯함과 편안함을 더해줍니다.(about섹션 최상위)  */
+.section{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
 .sentence1 span{
     font-size: clamp(3rem, 5vw, 5rem);
     font-weight: 600;
