@@ -20,7 +20,9 @@
     h6,
     p,
     span,
-    em {
+    em,
+    label,
+    button {
         font-family: 'Pretendard';
         font-weight: 400;
     }
@@ -48,6 +50,21 @@
 
 body {
     &.scroll {
+        #button{
+            position: fixed;
+            bottom: 20%;
+            right: 10px;
+            z-index: 100000;
+            #formbtn{
+                margin-bottom: 0.75rem;
+            }
+            #topbtn{
+                .topButton{
+                    opacity: 1 !important;
+                    visibility: visible !important;
+                }
+            }
+        }
         #hd {
             background-color: rgb(255, 255, 255, 0.8);
 
@@ -429,64 +446,62 @@ body {
                 }
             }
             #aboutinsta{
-                .swiper{
-                    .swiper-wrapper{
-                        transition-timing-function: linear;
-                        padding: 0 1rem;
-                        .swiper-slide{
-                            width: 150px !important;
-                            height: 150px !important;
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            @media(min-width:768px){
-                                width: 200px !important;
-                                height: 200px !important;
+                .sectioncontainer{
+                    width: 92.5%;
+                    margin: 0 auto;
+                    max-width: 1200px;
+                    .swiper{
+                        margin-top: 40px;
+                        .swiper-wrapper{
+                            .swiper-slide{
+                                width: 250px;
+                                height: 250px;
+                                padding-right: 5px;
+
+                                @media(max-width:576px){
+                                    width: 200px;
+                                    height: 200px;
+                                }
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    cursor: pointer;
+                                }
                             }
+                            .swiper-slide:not(:first-child){
+                                padding-left: 5px;
+                            }
+                            
                         }
-                        .insta0{
-                            background-image: url(/img/instaA0.png);
-                        }
-                        .insta1{
-                            background-image: url(/img/instaB1.png);
-                        }
-                        .insta2{
-                            background-image: url(/img/instaC2.png);
-                        }
-                        .insta3{
-                            background-image: url(/img/instaC1.png);
-                        }
-                        .insta4{
-                            background-image: url(/img/instaA2.png);
-                        }
-                        .insta5{
-                            background-image: url(/img/instaB0.png);
-                        }
-                        .insta6{
-                            background-image: url(/img/instaA1.png);
-                        }
-                        .insta7{
-                            background-image: url(/img/instaC3.png);
-                        }
-                        .insta8{
-                            background-image: url(/img/instaA3.png);
-                        }
-                        .insta9{
-                            background-image: url(/img/instaC0.png);
-                        }
+                    }
+                }
+                .aboutinsta_popup__3lynE{
+                    .popupclose{
+                        background-image: url(/img/XbuttonWhite.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 20px;
+                        height: 20px;
+                        cursor: pointer;
+                        position: absolute;
+                        right: 10px;
+                        bottom: 101%;
                     }
                 }
             }
         }
 
         #button{
-            svg{
-                circle{
-                    stroke-dasharray: 0;
-                    stroke-dashoffset: 0;
-                    stroke-width: 2;
-                    stroke: #141414;
-                    fill: none;
+            .topButton{
+                .topButtonsvg{
+                    circle{
+                        stroke-dasharray: 0;
+                        stroke-dashoffset: 0;
+                        stroke-width: 2;
+                        stroke: #141414;
+                        fill: none;
+                    }
                 }
             }
         }

@@ -20,7 +20,9 @@
 * h6,
 * p,
 * span,
-* em {
+* em,
+* label,
+* button {
   font-family: "Pretendard";
   font-weight: 400;
 }
@@ -43,6 +45,19 @@
   font-weight: 500 !important;
 }
 
+body.scroll #button {
+  position: fixed;
+  bottom: 20%;
+  right: 10px;
+  z-index: 100000;
+}
+body.scroll #button #formbtn {
+  margin-bottom: 0.75rem;
+}
+body.scroll #button #topbtn .topButton {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 body.scroll #hd {
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -363,54 +378,46 @@ body #contents #about .youtube iframe {
   width: 100%;
   height: 100%;
 }
-body #contents #about #aboutinsta .swiper .swiper-wrapper {
-  transition-timing-function: linear;
-  padding: 0 1rem;
+body #contents #about #aboutinsta .sectioncontainer {
+  width: 92.5%;
+  margin: 0 auto;
+  max-width: 1200px;
 }
-body #contents #about #aboutinsta .swiper .swiper-wrapper .swiper-slide {
-  width: 150px !important;
-  height: 150px !important;
+body #contents #about #aboutinsta .sectioncontainer .swiper {
+  margin-top: 40px;
+}
+body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide {
+  width: 250px;
+  height: 250px;
+  padding-right: 5px;
+}
+@media (max-width: 576px) {
+  body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide {
+    width: 200px;
+    height: 200px;
+  }
+}
+body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide:not(:first-child) {
+  padding-left: 5px;
+}
+body #contents #about #aboutinsta .aboutinsta_popup__3lynE .popupclose {
+  background-image: url(/img/XbuttonWhite.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  bottom: 101%;
 }
-@media (min-width: 768px) {
-  body #contents #about #aboutinsta .swiper .swiper-wrapper .swiper-slide {
-    width: 200px !important;
-    height: 200px !important;
-  }
-}
-body #contents #about #aboutinsta .swiper .swiper-wrapper .insta0 {
-  background-image: url(/img/instaA0.png);
-}
-body #contents #about #aboutinsta .swiper .swiper-wrapper .insta1 {
-  background-image: url(/img/instaB1.png);
-}
-body #contents #about #aboutinsta .swiper .swiper-wrapper .insta2 {
-  background-image: url(/img/instaC2.png);
-}
-body #contents #about #aboutinsta .swiper .swiper-wrapper .insta3 {
-  background-image: url(/img/instaC1.png);
-}
-body #contents #about #aboutinsta .swiper .swiper-wrapper .insta4 {
-  background-image: url(/img/instaA2.png);
-}
-body #contents #about #aboutinsta .swiper .swiper-wrapper .insta5 {
-  background-image: url(/img/instaB0.png);
-}
-body #contents #about #aboutinsta .swiper .swiper-wrapper .insta6 {
-  background-image: url(/img/instaA1.png);
-}
-body #contents #about #aboutinsta .swiper .swiper-wrapper .insta7 {
-  background-image: url(/img/instaC3.png);
-}
-body #contents #about #aboutinsta .swiper .swiper-wrapper .insta8 {
-  background-image: url(/img/instaA3.png);
-}
-body #contents #about #aboutinsta .swiper .swiper-wrapper .insta9 {
-  background-image: url(/img/instaC0.png);
-}
-body #contents #button svg circle {
+body #contents #button .topButton .topButtonsvg circle {
   stroke-dasharray: 0;
   stroke-dashoffset: 0;
   stroke-width: 2;
