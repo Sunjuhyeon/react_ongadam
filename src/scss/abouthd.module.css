@@ -88,7 +88,54 @@ hr {
 }
 
 /* 온가담 유통시스템 (about섹션 최하위) */
-.sentence2 img{
+.sentence2{
+    background-image: url(../../public/img/truckImg.png);
+    width: 100%;
+    height: 419px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sentence2 p{
+    margin-bottom: 0;
+    color: white;
+}
+.sentence2 .title{
+    padding-right: 3rem;
+}
+.sentence2 .title p{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.sentence2 .content{
+    padding-left: 3rem;
+    border-left: 1px solid white;
+}
+.sentence2 .content p{
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+}
+.sentence2 .content .direct{
+    background-color: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 5px;
+}
+.sentence2 .content .direct span{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.sentence2 .content .direct img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* .sentence2 img{
     width: 7rem;
     display: block;
     left: 0;
@@ -125,7 +172,7 @@ hr {
 .sentence2Content span{
     font-weight: 700;
     color: #333 !important;
-}
+} */
 
 @media(max-width:400px){
     .aboutSentence{
@@ -178,7 +225,7 @@ hr {
         display: block;
     }
 
-    .sentence2 img{
+    /* .sentence2 img{
         width: 20%;
         height: auto;
         padding-bottom: 0.5rem;
@@ -186,7 +233,7 @@ hr {
     .sentence2Content{
         width: 90vw;
         padding: 1rem 0;
-    }
+    } */
 }
 
 @media(min-width:1400px) {
@@ -194,8 +241,8 @@ hr {
         max-width: 20vw;
     }
 }
-@media(min-width:1400px){
+/* @media(min-width:1400px){
     .sentence2Content{
         max-width: 50vw;
     }
-}
+} */

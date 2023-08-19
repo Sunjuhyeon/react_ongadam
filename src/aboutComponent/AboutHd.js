@@ -65,11 +65,16 @@ function AboutHd(props) {
                     })
                 }
             </ul>
-            <div className={`${ab.sentence2}`}>
-                <img src="/img/truckIcon.png" alt="truckIcon" />
-                <p className={`${ab.sentence2Title}`}>온가담만의 <span>유통시스템</span></p>
-                <div className={`${ab.sentence2Content}`}>
-                    <p>온가담은 생산부터 판매 이후까지 모두 직접 <br />관리하여 <span>불필요한 유통 마진을 제거</span>합니다.</p>
+            <div className={`${ab.sentence2} sentence2`}>
+                <div className={`${ab.title}`}>
+                    <p>온가담의<br /> <em className='ms-4'>유통시스템</em></p>
+                </div>
+                <div className={`${ab.content}`}>
+                    <p>온가담은 생산부터 판매 이후까지 모두 직접 관리하여 <br /><em>불필요한 유통 마진을 제거</em>합니다.</p>
+                    <a className={`${ab.direct}`} href="">
+                        <span>유통과정 보러가기</span>
+                        <img src="/img/icon_arrow2.png" alt="arrow" />
+                    </a>
                 </div>
             </div>
         </section>

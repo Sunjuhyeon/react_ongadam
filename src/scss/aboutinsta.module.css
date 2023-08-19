@@ -73,11 +73,13 @@
     font-size: 1.2rem;
     line-height: 1.5rem;
     color: rgb(73, 73, 73);
+    word-break: keep-all;
 }
 .popup .pophash p{
     font-size: 1.2rem;
     line-height: 1.5rem;
     color: rgb(73, 73, 73);
+    word-break: keep-all;
 }
 
 .popup .popupbottom .goshoptitle{
@@ -106,9 +108,21 @@
     width: 400px;
 }
 
-@media(max-width:991px){
+.close{
+    background-image: url(../../public/img/XbuttonWhite.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 101%;
+}
+
+@media(max-width:992px){
     .popup{
-        width: 60%;
+        width: 80%;
         height: 70%;
     }
     .popupbox{
@@ -128,5 +142,11 @@
         margin-top: 3rem !important;
         width: 100%;
         margin: 0 auto;
+    }
+}
+@media(max-width:450px){
+    .popup{
+        width: 95%;
+        height: 70%;
     }
 }

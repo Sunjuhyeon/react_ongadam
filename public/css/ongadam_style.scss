@@ -250,8 +250,6 @@ body {
         }
         #review{
             .swiper{
-                .swiper-wrapper{
-                }
                 .swiper-pagination,
                 .swiper-pagination-progressbar.swiper-pagination-vertical,
                 .swiper-vertical>.swiper-pagination-progressbar,
@@ -424,6 +422,13 @@ body {
             }
         }
         #about{
+            #abouthd{
+                .sentence2{
+                    background-color: black;
+                    width: 100vw;
+                    height: 500px;
+                }
+            }
             #aboutyoutube{
                 .textContent{
                     p{
@@ -474,19 +479,20 @@ body {
                             
                         }
                     }
-                }
-                .aboutinsta_popup__3lynE{
-                    .popupclose{
-                        background-image: url(/img/XbuttonWhite.png);
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        width: 20px;
-                        height: 20px;
-                        cursor: pointer;
-                        position: absolute;
-                        right: 10px;
-                        bottom: 101%;
+                    .popup{
+                        background-color: black !important;
+                        .popupclose{
+                            background-image: url(/img/XbuttonWhite.png);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            width: 20px;
+                            height: 20px;
+                            // cursor: pointer;
+                            position: absolute;
+                            right: 10px;
+                            bottom: 101%;
+                        }
                     }
                 }
             }

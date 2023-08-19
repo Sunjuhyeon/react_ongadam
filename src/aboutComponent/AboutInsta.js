@@ -51,6 +51,7 @@ export const AboutInsta = (props) => {
                         info={props.info.contentsdb.about.aboutInsta} 
                         num={showpopup}
                         closePopup={closePopup}
+                        id="pop"
                         >
                         </Instar>
                         )}
