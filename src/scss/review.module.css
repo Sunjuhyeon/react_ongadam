@@ -5,7 +5,6 @@
     align-items: center;
     background-color: white;
     padding-left: 15rem;
-    padding-top: 5rem;
 }
 
 .merit .mTitle {
@@ -51,7 +50,7 @@
     padding-right: 15rem;
     padding-top: 5rem;
     padding-left: 5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 5rem;
     background-color: #f5f5f5;
 }
 .review .rTitle {
@@ -143,6 +142,17 @@
     }
     .merit .meritlist span{
         font-size: 1.1rem;
+    }
+}
+
+@media(max-width:992px){
+    .merit{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .review{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 }
 

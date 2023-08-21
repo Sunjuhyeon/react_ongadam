@@ -15,12 +15,12 @@
 }
 
 .sentence1 span{
-    font-size: clamp(3rem, 5vw, 5rem);
+    font-size: 3rem;
     font-weight: 600;
     color: var(--main-green);
 }
 .sentence1 p{
-    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-size: 2.5rem;
     font-weight: 400;
 }
 hr {
@@ -36,41 +36,42 @@ hr {
     justify-content: center;
     margin: 0.5rem;
 }
-.AUcard{
+/* .AUcard{
     border: 1px solid var(--sub-gray);
-}
+} */
 .AUcard img{
     max-width: 30vw;
 }
 .aboutSentence{
-    margin-left: 0.5rem;
     width: 100%;
     height: 200px;
-}
-.aboutSentence .cardTopic{
-    margin: 0;
-    margin-bottom: 0.2rem !important;
+    padding-top: 1.5rem;
 }
 .Mbr{
     display: none;
 }
 .cardTopic{
-    color: var(--font-gray);
+    display: inline-block;
+    border-bottom: 1px solid #333;
+    color: #333;
     font-weight: 300;
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
 .cardName{
     font-weight: 700;
     font-size: 1.5rem;
-    line-height: 1;
+    margin-bottom: 0.5rem;
 }
 .cardcontent0cls{
     line-height: 1.1rem;
 }
 .cardContent{
     display: block;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1rem;
+    color: #6f6f6f;
+
 }
 .cardContent span{
     color: var(--main-green);
@@ -79,6 +80,10 @@ hr {
 .cardcontent1cls{
     padding-top: 0.5rem;
     line-height: 1.1rem;
+}
+.cardcontent1cls p{
+    font-weight: 400;
+    color: #6f6f6f;
 }
 .aboutSentence .cardContent{
     margin-bottom: 0;
@@ -95,7 +100,6 @@ hr {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,10 +108,11 @@ hr {
     margin-bottom: 0;
     color: white;
 }
-.sentence2 .title{
+/* .sentence2 .title{
     padding-right: 3rem;
-}
+} */
 .sentence2 .title p{
+    display: inline-block;
     font-size: 1.5rem;
     font-weight: 300;
 }
@@ -123,6 +128,10 @@ hr {
     background-color: white;
     padding: 0.75rem 1.25rem;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
 }
 .sentence2 .content .direct span{
     font-weight: 600;
@@ -131,6 +140,52 @@ hr {
 .sentence2 .content .direct img{
     width: 20px;
     height: 20px;
+}
+
+@media(min-width:576px){
+    .moblieBr{
+        display: none;
+    }
+}
+
+@media(max-width:400px){
+    .sentence2 .title{
+        padding-bottom: 1rem !important;
+    }
+    .sentence2 .content p{
+        font-size: 1.1rem;
+        padding-top: 1rem !important;
+    }
+}
+@media(max-width:768px){
+    .sentence2{
+        flex-direction: column;
+    }
+    .sentence2 .title{
+        padding-bottom: 2rem;
+    }
+    .sentence2 .title p{
+        display: flex;
+        justify-content: center;
+    }
+    .sentence2 .title p em{
+        padding-left: 0.5rem;
+    }
+    .sentence2 .content{
+        padding-left: 0;
+        border-left: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sentence2 .content p{
+        display: inline-block;
+        border-top: 1px solid white;
+        padding-top: 2rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
 }
 
 
@@ -179,11 +234,16 @@ hr {
         padding-top: 0 !important;
         padding-bottom: 0 !important;
     }
+    .sentence1 span {
+        font-size: 1.7rem !important;
+    }
+    .sentence1 p {
+        font-size: 1.2rem !important;
+    }
 }
 
 @media(max-width:576px){
     .aboutSentence {
-        width: 52vw !important;
         margin-left: 0.2rem !important;
         height: 150px !important;
     }
@@ -194,20 +254,29 @@ hr {
         margin-bottom: 0.1rem;
         font-size: 1.3rem;
     }
+    .aboutUsCard li{
+        margin: 0.5rem 0;
+    }
+    .AUcard{
+        width: 100%;
+    }
 }
 
-@media(max-width:767px) {
+@media(max-width:768px) {
+    .sentence1 {
+        line-height: 2rem;
+    }
     .sentence1 span {
         display: flex;
         justify-content: center;
         transform: translateX(-30%);
-        font-size: 6vw;
+        font-size: 2rem;
     }
 
     .sentence1 p {
         display: flex;
         justify-content: center;
-        font-size: 4vw;
+        font-size: 1.5rem;
     }
 
     .aboutUsCard{
@@ -220,6 +289,7 @@ hr {
     .aboutSentence{
         width: 200px;
         height: 100%;
+        padding-top: 0;
     }
     .cardContent br{
         display: block;

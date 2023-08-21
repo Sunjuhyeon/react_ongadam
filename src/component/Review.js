@@ -12,7 +12,7 @@ function Review(props) {
     return (
         <section id={props.id} className={` ${re.section}`}>
             <div className='px-lg-0 d-flex flex-column flex-lg-row justify-content-lg-between'>
-                <div className={`${re.merit} col-lg-5 pb-lg-0 pb-3`}>
+                <div className={`${re.merit} col-lg-5 pb-lg-0`}>
                     <div className={`${re.mTitle}`}>
                         <p className={`mb-0`}>고객 구매 만족도</p>
                         <div className={`d-flex`}>

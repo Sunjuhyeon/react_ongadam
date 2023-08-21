@@ -196,7 +196,6 @@ body #contents #review .swiper .swiper-pagination-progressbar .swiper-pagination
 }
 body #contents #slide .swiper {
   background-color: black;
-  height: -moz-fit-content;
   height: fit-content;
 }
 body #contents #slide .swiper .swiper-button-prev {
@@ -227,7 +226,6 @@ body #contents #slide .swiper .swiper-button-next::after {
 }
 body #contents #slide .swiper .swiper-slide {
   opacity: 0.5;
-  height: -moz-fit-content;
   height: fit-content;
 }
 body #contents #slide .swiper .swiper-slide.swiper-slide-active {
@@ -253,13 +251,13 @@ body #contents #slide .swiper .swiper-slide a .title0 {
   color: rgb(0, 154, 36);
 }
 body #contents #slide .swiper .swiper-slide a .title1 {
-  font-family: "Binggrae-Two", serif;
-  font-weight: normal;
+  font-family: "SBAggro", sans-serif;
+  font-weight: 500;
   color: rgb(0, 126, 96);
 }
 body #contents #slide .swiper .swiper-slide a .title2 {
-  font-family: "BMDOHYEON", sans-serif;
-  font-weight: normal;
+  font-family: "SBAggro", sans-serif;
+  font-weight: 500;
   color: #005db9;
 }
 body #contents #slide .swiper .swiper-slide .slide0 {
