@@ -196,6 +196,7 @@ body #contents #review .swiper .swiper-pagination-progressbar .swiper-pagination
 }
 body #contents #slide .swiper {
   background-color: black;
+  height: -moz-fit-content;
   height: fit-content;
 }
 body #contents #slide .swiper .swiper-button-prev {
@@ -226,6 +227,7 @@ body #contents #slide .swiper .swiper-button-next::after {
 }
 body #contents #slide .swiper .swiper-slide {
   opacity: 0.5;
+  height: -moz-fit-content;
   height: fit-content;
 }
 body #contents #slide .swiper .swiper-slide.swiper-slide-active {
@@ -261,19 +263,19 @@ body #contents #slide .swiper .swiper-slide a .title2 {
   color: #005db9;
 }
 body #contents #slide .swiper .swiper-slide .slide0 {
-  background-image: url(../img/slide0.png);
+  background-image: url(/img/slide0.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 body #contents #slide .swiper .swiper-slide .slide1 {
-  background-image: url(../img/slide1.png);
+  background-image: url(/img/slide1.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 body #contents #slide .swiper .swiper-slide .slide2 {
-  background-image: url(../img/slide2.png);
+  background-image: url(/img/slide2.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -361,9 +363,7 @@ body #contents #event ul li .event2 a {
   background-image: url(/img/event2.png);
 }
 body #contents #about #abouthd .sentence2 {
-  background-color: black;
-  width: 100vw;
-  height: 500px;
+  background-image: url(/img/truckImg.png);
 }
 body #contents #about #aboutyoutube .textContent p {
   font-family: "PuradakGentleGothicR", serif;

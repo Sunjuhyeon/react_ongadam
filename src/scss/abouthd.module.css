@@ -64,12 +64,12 @@ hr {
     margin-bottom: 0.5rem;
 }
 .cardcontent0cls{
-    line-height: 1.1rem;
+    line-height: 1.3rem;
 }
 .cardContent{
     display: block;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #6f6f6f;
 
 }
@@ -94,7 +94,7 @@ hr {
 
 /* 온가담 유통시스템 (about섹션 최하위) */
 .sentence2{
-    background-image: url(../../public/img/truckImg.png);
+    /* background-image: url(../../public/img/truckImg.png); */
     width: 100%;
     height: 419px;
     background-position: center;
@@ -259,6 +259,12 @@ hr {
     }
     .AUcard{
         width: 100%;
+    }
+    .cardcontent0cls {
+        line-height: 1.1rem;
+    }
+    .cardContent {
+        font-size: 1rem;
     }
 }
 

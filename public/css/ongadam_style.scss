@@ -333,21 +333,21 @@ body {
                     }
 
                     .slide0 {
-                        background-image: url(../img/slide0.png);
+                        background-image: url(/img/slide0.png);
                         background-position: center;
                         background-size: cover;
                         background-repeat: no-repeat;
                     }
 
                     .slide1 {
-                        background-image: url(../img/slide1.png);
+                        background-image: url(/img/slide1.png);
                         background-position: center;
                         background-size: cover;
                         background-repeat: no-repeat;
                     }
 
                     .slide2 {
-                        background-image: url(../img/slide2.png);
+                        background-image: url(/img/slide2.png);
                         background-position: center;
                         background-size: cover;
                         background-repeat: no-repeat;
@@ -424,9 +424,7 @@ body {
         #about{
             #abouthd{
                 .sentence2{
-                    background-color: black;
-                    width: 100vw;
-                    height: 500px;
+                        background-image: url(/img/truckImg.png);
                 }
             }
             #aboutyoutube{
