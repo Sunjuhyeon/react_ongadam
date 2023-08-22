@@ -1,25 +1,13 @@
+.sectionbg{
+    background-color: green;
+}
 .formBox{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    max-width: 400px;
+    justify-content: center;
+    align-items: stretch;
 }
-.formBox label{
-    height: 2rem;
-    display: flex;
-    align-items: end;
+.formBox input[type="text"]{
+    height: 3rem;
 }
-.formBox input{
-    padding: 0.5rem 0.25rem;
-    border-radius: 5px;
-    border: 1px solid #337005;
-}
-.formBox button{
-    margin-top: 1.5rem;
-    height: 2.5rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #337005;
-    color: white;
+.formBox input[type="date"]{
+    height: 3rem;
 }
