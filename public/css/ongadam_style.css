@@ -22,7 +22,8 @@
 * span,
 * em,
 * label,
-* button {
+* button,
+* input {
   font-family: "Pretendard";
   font-weight: 400;
 }
@@ -196,7 +197,6 @@ body #contents #review .swiper .swiper-pagination-progressbar .swiper-pagination
 }
 body #contents #slide .swiper {
   background-color: black;
-  height: -moz-fit-content;
   height: fit-content;
 }
 body #contents #slide .swiper .swiper-button-prev {
@@ -227,7 +227,6 @@ body #contents #slide .swiper .swiper-button-next::after {
 }
 body #contents #slide .swiper .swiper-slide {
   opacity: 0.5;
-  height: -moz-fit-content;
   height: fit-content;
 }
 body #contents #slide .swiper .swiper-slide.swiper-slide-active {
@@ -421,6 +420,29 @@ body #contents #about #aboutinsta .sectioncontainer .popup .popupclose {
   position: absolute;
   right: 10px;
   bottom: 101%;
+}
+body #contents #form {
+  position: relative;
+}
+body #contents #form:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 50px;
+  background-color: #337005;
+  border-radius: 0 70% 0 0;
+  top: -50px;
+}
+body #contents #form:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 50px;
+  background-color: #337005;
+  border-radius: 70% 0 0 0;
+  top: -50px;
 }
 body #contents #button .topButton .topButtonsvg circle {
   stroke-dasharray: 0;
