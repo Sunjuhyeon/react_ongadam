@@ -23,7 +23,7 @@ function Slide(props) {
                         slidesPerView: 1.3
                     }
                     ,1400: {
-                        slidesPerView : 1.8
+                        slidesPerView : 1.75
                     }
                 }}
                 
