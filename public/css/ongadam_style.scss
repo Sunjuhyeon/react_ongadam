@@ -51,6 +51,8 @@
 }
 
 body {
+
+//body에 클래스 scroll 적용 시
     &.scroll {
         #button {
             position: fixed;
@@ -108,6 +110,7 @@ body {
         }
     }
 
+//body에 클래스hamMenu 적용 시
     &.hamMenu {
         overflow-y: hidden;
 
@@ -136,6 +139,7 @@ body {
         }
     }
 
+//헤더
     #hd {
         transition: 0.5s;
 
@@ -232,6 +236,7 @@ body {
         }
     }
 
+//컨텐츠
     #contents {
         #MEventBanner {
             @media(min-width:991px) {
@@ -252,30 +257,6 @@ body {
                         height: 2rem;
                         transform: translate(0, 0.5rem);
                     }
-                }
-            }
-        }
-
-        #review {
-            .swiper {
-
-                .swiper-pagination,
-                .swiper-pagination-progressbar.swiper-pagination-vertical,
-                .swiper-vertical>.swiper-pagination-progressbar,
-                .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-                    position: absolute;
-                    top: 0;
-                    right: 0 !important;
-                    left: auto !important;
-                    width: 3px !important;
-                }
-
-                .swiper-pagination {
-                    background-color: #ebebeb;
-                }
-
-                .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-                    background-color: #9C9494 !important;
                 }
             }
         }
@@ -330,7 +311,7 @@ body {
                         }
 
                         @media(min-width:1400px) {
-                            height: 70vh;
+                            height: 80vh;
                         }
 
                         .title0 {
@@ -378,17 +359,40 @@ body {
 
         }
 
-        #event {
-            background-image: url(/img/main_event_bg.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+        #review {
+            .swiper {
 
+                .swiper-pagination,
+                .swiper-pagination-progressbar.swiper-pagination-vertical,
+                .swiper-vertical>.swiper-pagination-progressbar,
+                .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+                    position: absolute;
+                    top: 0;
+                    right: 0 !important;
+                    left: auto !important;
+                    width: 3px !important;
+                }
+
+                .swiper-pagination {
+                    background-color: #ebebeb;
+                }
+
+                .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+                    background-color: #9C9494 !important;
+                }
+            }
+        }
+
+        #event {
+            // background-image: url(/img/main_event_bg.jpg);
+            // background-repeat: no-repeat;
+            // background-position: center;
+            // background-size: cover;
             ul {
                 margin: 0 auto;
 
                 @media(max-width:991px) {
-                    width: 70vw;
+                    width: 80vw;
                 }
 
                 @media(max-width:576px) {
@@ -399,14 +403,16 @@ body {
 
                     // background-color: #f2f2f2;
                     .event0 {
-                        width: 600px;
+                        width: 800px;
 
-                        @media(max-width:1210px) {
+                        @media(max-width:1570px) {
+                            width: 600px;
+                        }
+                        @media(max-width:1220px) {
                             width: 450px;
                         }
-
                         @media(max-width:991px) {
-                            width: 70vw;
+                            width: 80vw;
                         }
 
                         @media(max-width:576px) {
@@ -420,14 +426,16 @@ body {
                     }
 
                     .event1 {
-                        width: 300px;
+                        width: 400px;
 
-                        @media(max-width:1210px) {
+                        @media(max-width:1570px) {
+                            width: 300px;
+                        }
+                        @media(max-width:1220px) {
                             width: 225px;
                         }
-
                         @media(max-width:991px) {
-                            width: 70vw;
+                            width: 50vw;
                         }
 
                         @media(max-width:576px) {
@@ -440,14 +448,16 @@ body {
                     }
 
                     .event2 {
-                        width: 300px;
+                        width: 400px;
 
-                        @media(max-width:1210px) {
+                        @media(max-width:1570px) {
+                            width: 300px;
+                        }
+                        @media(max-width:1220px) {
                             width: 225px;
                         }
-
                         @media(max-width:991px) {
-                            width: 70vw;
+                            width: 50vw;
                         }
 
                         @media(max-width:576px) {
@@ -470,28 +480,21 @@ body {
             }
 
             #aboutyoutube {
-                .textContent {
-                    p {
-                        font-family: 'PuradakGentleGothicR', serif;
-                        font-weight: normal;
+                .youtube {
+                    padding-bottom: 56.25%;
+                    position: relative;
+                    width: 100%;
+    
+                    iframe {
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
                     }
                 }
-
             }
 
-            .youtube {
-                padding-bottom: 56.25%;
-                position: relative;
-                width: 100%;
-
-                iframe {
-                    top: 0;
-                    left: 0;
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                }
-            }
 
             #aboutinsta {
                 .sectioncontainer {
@@ -555,20 +558,36 @@ body {
                 position: absolute;
                 left: 0;
                 width: 50%;
-                height: 50px;
+                height: 40px;
                 background-color: #337005;
-                border-radius: 0 70% 0 0;
-                top: -50px;
+                border-radius: 0 70px 0 0;
+                top: -40px;
+                z-index: 1000;
             }
             &:after {
                 content: "";
                 position: absolute;
                 right: 0;
                 width: 50%;
-                height: 50px;
+                height: 40px;
                 background-color: #337005;
-                border-radius: 70% 0 0 0;
-                top: -50px;
+                border-radius: 70px 0 0 0;
+                top: -40px;
+            }
+
+            .subtop{
+                .arrow{
+                    width: 18px;
+                    height: 20px;
+                    background-image: url(/img/icon_arrow2.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    @media(max-width:768px){
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
             }
         }
 
@@ -584,6 +603,19 @@ body {
                     }
                 }
             }
+        }
+    }
+
+//풋터
+    #ft{
+        &.on{
+            .ft_familySiteList__XhxNm{
+                height: calc(29.6px * 3);
+            }
+        }
+        svg{
+            width: 7rem;
+            fill: #333;
         }
     }
 }

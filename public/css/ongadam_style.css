@@ -179,22 +179,6 @@ body #contents #MEventBanner div p::after {
   height: 2rem;
   transform: translate(0, 0.5rem);
 }
-body #contents #review .swiper .swiper-pagination,
-body #contents #review .swiper .swiper-pagination-progressbar.swiper-pagination-vertical,
-body #contents #review .swiper .swiper-vertical > .swiper-pagination-progressbar,
-body #contents #review .swiper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-  position: absolute;
-  top: 0;
-  right: 0 !important;
-  left: auto !important;
-  width: 3px !important;
-}
-body #contents #review .swiper .swiper-pagination {
-  background-color: #ebebeb;
-}
-body #contents #review .swiper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-  background-color: #9C9494 !important;
-}
 body #contents #slide .swiper {
   background-color: black;
   height: fit-content;
@@ -243,7 +227,7 @@ body #contents #slide .swiper .swiper-slide a {
 }
 @media (min-width: 1400px) {
   body #contents #slide .swiper .swiper-slide a {
-    height: 70vh;
+    height: 80vh;
   }
 }
 body #contents #slide .swiper .swiper-slide a .title0 {
@@ -279,18 +263,28 @@ body #contents #slide .swiper .swiper-slide .slide2 {
   background-size: cover;
   background-repeat: no-repeat;
 }
-body #contents #event {
-  background-image: url(/img/main_event_bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+body #contents #review .swiper .swiper-pagination,
+body #contents #review .swiper .swiper-pagination-progressbar.swiper-pagination-vertical,
+body #contents #review .swiper .swiper-vertical > .swiper-pagination-progressbar,
+body #contents #review .swiper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  position: absolute;
+  top: 0;
+  right: 0 !important;
+  left: auto !important;
+  width: 3px !important;
+}
+body #contents #review .swiper .swiper-pagination {
+  background-color: #ebebeb;
+}
+body #contents #review .swiper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #9C9494 !important;
 }
 body #contents #event ul {
   margin: 0 auto;
 }
 @media (max-width: 991px) {
   body #contents #event ul {
-    width: 70vw;
+    width: 80vw;
   }
 }
 @media (max-width: 576px) {
@@ -299,16 +293,21 @@ body #contents #event ul {
   }
 }
 body #contents #event ul li .event0 {
-  width: 600px;
+  width: 800px;
 }
-@media (max-width: 1210px) {
+@media (max-width: 1570px) {
+  body #contents #event ul li .event0 {
+    width: 600px;
+  }
+}
+@media (max-width: 1220px) {
   body #contents #event ul li .event0 {
     width: 450px;
   }
 }
 @media (max-width: 991px) {
   body #contents #event ul li .event0 {
-    width: 70vw;
+    width: 80vw;
   }
 }
 @media (max-width: 576px) {
@@ -320,16 +319,21 @@ body #contents #event ul li .event0 a {
   background-image: url(/img/event0.png);
 }
 body #contents #event ul li .event1 {
-  width: 300px;
+  width: 400px;
 }
-@media (max-width: 1210px) {
+@media (max-width: 1570px) {
+  body #contents #event ul li .event1 {
+    width: 300px;
+  }
+}
+@media (max-width: 1220px) {
   body #contents #event ul li .event1 {
     width: 225px;
   }
 }
 @media (max-width: 991px) {
   body #contents #event ul li .event1 {
-    width: 70vw;
+    width: 50vw;
   }
 }
 @media (max-width: 576px) {
@@ -341,16 +345,21 @@ body #contents #event ul li .event1 a {
   background-image: url(/img/event1.png);
 }
 body #contents #event ul li .event2 {
-  width: 300px;
+  width: 400px;
 }
-@media (max-width: 1210px) {
+@media (max-width: 1570px) {
+  body #contents #event ul li .event2 {
+    width: 300px;
+  }
+}
+@media (max-width: 1220px) {
   body #contents #event ul li .event2 {
     width: 225px;
   }
 }
 @media (max-width: 991px) {
   body #contents #event ul li .event2 {
-    width: 70vw;
+    width: 50vw;
   }
 }
 @media (max-width: 576px) {
@@ -364,16 +373,12 @@ body #contents #event ul li .event2 a {
 body #contents #about #abouthd .sentence2 {
   background-image: url(/img/truckImg.png);
 }
-body #contents #about #aboutyoutube .textContent p {
-  font-family: "PuradakGentleGothicR", serif;
-  font-weight: normal;
-}
-body #contents #about .youtube {
+body #contents #about #aboutyoutube .youtube {
   padding-bottom: 56.25%;
   position: relative;
   width: 100%;
 }
-body #contents #about .youtube iframe {
+body #contents #about #aboutyoutube .youtube iframe {
   top: 0;
   left: 0;
   position: absolute;
@@ -429,20 +434,35 @@ body #contents #form:before {
   position: absolute;
   left: 0;
   width: 50%;
-  height: 50px;
+  height: 40px;
   background-color: #337005;
-  border-radius: 0 70% 0 0;
-  top: -50px;
+  border-radius: 0 70px 0 0;
+  top: -40px;
+  z-index: 1000;
 }
 body #contents #form:after {
   content: "";
   position: absolute;
   right: 0;
   width: 50%;
-  height: 50px;
+  height: 40px;
   background-color: #337005;
-  border-radius: 70% 0 0 0;
-  top: -50px;
+  border-radius: 70px 0 0 0;
+  top: -40px;
+}
+body #contents #form .subtop .arrow {
+  width: 18px;
+  height: 20px;
+  background-image: url(/img/icon_arrow2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 768px) {
+  body #contents #form .subtop .arrow {
+    width: 15px;
+    height: 15px;
+  }
 }
 body #contents #button .topButton .topButtonsvg circle {
   stroke-dasharray: 0;
@@ -450,4 +470,11 @@ body #contents #button .topButton .topButtonsvg circle {
   stroke-width: 2;
   stroke: #141414;
   fill: none;
+}
+body #ft.on .ft_familySiteList__XhxNm {
+  height: 88.8px;
+}
+body #ft svg {
+  width: 7rem;
+  fill: #333;
 }/*# sourceMappingURL=ongadam_style.css.map */
