@@ -28,8 +28,27 @@ function Event(props) {
                                         <a href=""></a>
                                     </div>
                                     <div className={`${v.textcls} ${e.textbox}`}>
-                                        <p className={`mb-0`}>{v.title}</p>
-                                        <span>{v.subtitle}</span>
+                                        {v.title.split("<br>").map((br, i) => {
+                                            const emSplit = br.split("<em>");
+                                            return (
+                                                <p key={i} className={"title" + i}>
+                                                    {emSplit.map((v, idx) => {
+                                                        if (idx % 2 === 0) {
+                                                            return v; // 짝수 인덱스는 <strong> 태그 외의 텍스트
+                                                        } else {
+                                                            return <em key={idx}>{v}</em>; // 홀수 인덱스는 <strong> 태그 내부의 텍스트
+                                                        }
+                                                    })}
+                                                </p>
+                                            );
+                                        })}
+                                        {
+                                            v.subtitle.split("<br>").map((br, idx) => {
+                                                return(
+                                                    <p className={`subtitle${idx}`}>{br}</p>
+                                                )
+                                            })
+                                        }
                                         <a href="">바로가기<img src="/img/arrow.png" alt="arrow" /></a>
                                     </div>
                                     <div className={`${e.smtext} d-none`}>

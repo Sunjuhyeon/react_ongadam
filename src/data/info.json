@@ -152,8 +152,8 @@
         "event": {
             "lgE": [
                 {
-                    "title": "라온숨 X 온가담",
-                    "subtitle": "체험하고 커피 받으러가자!",
+                    "title": "남양주 인기카페 <em>라온숨 X 온가담</em> 콜라보!!",
+                    "subtitle": "남양주 인기카페에서 무료체험&무료커피 맛보러 GoGo~",
                     "link": "",
                     "imgcls": "event0 eventimg",
                     "textcls": "",
@@ -163,8 +163,8 @@
             ],
             "smE": [
                 {
-                    "title": "캠핑에 미치다 X 온가담",
-                    "subtitle": "최대 48%세일 오픈!!",
+                    "title": "캠핑족을 위한 <br>최대 <em>~48%<em> 최강공구 오픈!!",
+                    "subtitle": "07.01~07.04 단 3일!!",
                     "link": "",
                     "imgcls": "event1 eventimg",
                     "textcls": "ps-3",
@@ -172,11 +172,11 @@
                     "smtextsub": "07.01~07.04 단 3일!!"
                 },
                 {
-                    "title": "TOP3인기상품을 공짜로!",
-                    "subtitle": "SNS체험단 대모집",
+                    "title": "인기상품 <em>무료로 데려갈 사람 손~!!<em>",
+                    "subtitle": "지루한 신청 절차? No! <br>3분만에 신청하러 가기!!",
                     "link": "",
                     "imgcls": "event2 order-sm-2",
-                    "textcls": "d-flex flex-column align-items-end pe-sm-3 order-sm-1",
+                    "textcls": "d-flex flex-column align-items-end pe-sm-3 order-sm-1 text-end",
                     "smtext": "인기상품 <em>무료로 데려갈 사람 손~!!<em>",
                     "smtextsub": "지루한 신청 절차? No! 3분만에 신청하러 가기!!"
                 }

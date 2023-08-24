@@ -6,7 +6,7 @@
     margin-bottom: 1rem;
     font-size: 2rem;
     text-align: center;
-    color: white;
+    color: #333;
     font-weight: 300;
 }
 .titlename p em{
@@ -37,6 +37,18 @@
     width: 300px;
     max-width: 300px;
     height: 100%;
+}
+.textbox p{
+    margin-bottom: 0;
+    word-break: keep-all;
+    font-size: 18px;
+    font-weight: 500;
+    word-spacing: -2px;
+    line-height: 1.3rem;
+}
+.textbox p em{
+    color: #337005;
+    font-weight: 600;
 }
 .textbox a{
     width: 9rem;
