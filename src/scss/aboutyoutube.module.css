@@ -43,6 +43,9 @@
 .script p {
     font-size: clamp(1rem, 5vw, 1.5rem);
 }
+.textContent p{
+    font-weight: 600;
+}
 @media(max-width:576px){
     .textContent p{
         font-size: clamp(1.5rem, 3vw, 3rem) !important;
