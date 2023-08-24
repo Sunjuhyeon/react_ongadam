@@ -39,9 +39,16 @@ function Form(props) {
 
   return (
     <section id={props.id} className={`${form.sectionbg}`}>
+        <div className={`subtop ${form.subtop}`}>
+            <p>자세한 이벤트 내용 <em>확인하러가기</em></p>
+            <a href="" className={`${form.subtopbtn}`}>
+                <span>GO</span>
+                <div className='arrow'></div>
+            </a>
+        </div>
         <div className={`${form.title}`}>
-                <p className={`${form.subtitle}`}>남양주 인기카페 라온숨X온가담 콜라보 이벤트</p>
-                <p className={`${form.maintitle}`}>소형스타일러 무료체험 예약하고 <br /> 커피 공짜로 먹자!!</p>
+            <p className={`${form.subtitle}`}>남양주 인기카페 라온숨X온가담 콜라보 이벤트</p>
+            <p className={`${form.maintitle}`}>소형스타일러 무료체험 예약하고 <br /> 커피 공짜로 먹자!!</p>
         </div>
         <form 
         method='GET'
