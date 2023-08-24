@@ -138,8 +138,9 @@ hr {
     font-size: 1rem;
 }
 .sentence2 .content .direct img{
-    width: 20px;
-    height: 20px;
+    width: auto;
+    height: 15px;
+    padding-left: 0.5rem;
 }
 
 @media(min-width:576px){

@@ -72,7 +72,7 @@ function AboutHd(props) {
                     <p>온가담은 생산부터 판매 이후까지 <br className={`${ab.moblieBr}`}/> 모두 직접 관리하여 <br /><em>불필요한 유통 마진을 제거</em>합니다.</p>
                     <a className={`${ab.direct}`} href="">
                         <span>유통과정 보러가기</span>
-                        <img src="/img/icon_arrow2.png" alt="arrow" />
+                        <img src="/img/icon_arrowblack.png" alt="arrow" />
                     </a>
                 </div>
             </div>
