@@ -13,11 +13,11 @@ function AboutHd(props) {
                     <p className={`mb-0`}>&nbsp;&nbsp;삶의 따듯함과 편안함을 더해줍니다.</p>
                 </div>
             </div>
-            <ul className={`${ab.aboutUsCard} py-md-5 py-3 d-md-flex justify-content-center ps-0`}>
+            <ul className={`${ab.aboutUsCard} py-md-5 py-3 d-md-flex justify-content-center ps-0 container-lg`}>
                 {
                     props.info.contentsdb.about.aboutlist.map((v, i) => {
                         return (
-                            <div>
+                            <div className='col-lg-4'>
                                 <li>
                                     <div className={`${ab.AUcard} d-flex flex-md-column`}>
                                         <img src={v.src} alt="" />

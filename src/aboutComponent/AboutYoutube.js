@@ -7,7 +7,7 @@ export const AboutYoutube = (props) => {
           <div className={`textContent ${abU.textContent}`}>
               <p>"강력한 성능을 작은 공간에"</p>
           </div>
-          <div className={`${abU.mainContent}`}>
+          <div className={`${abU.mainContent} container-lg`}>
               <div className={`youtube ${abU.youtube} order-lg-2`}>
                   <iframe 
                       src="https://www.youtube.com/embed/_-r2RPBAtKs?&loop=1&playlist=_-r2RPBAtKs&autoplay=1&mute=1&modestbranding=1&start=45&end=80&controls=0" 

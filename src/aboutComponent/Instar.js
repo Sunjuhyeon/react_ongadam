@@ -35,7 +35,7 @@ function Instar(props) {
                                 <p className={`${abI.goshoptitle}`}>상품보러가기</p>
                                 <div>
                                     <a href="">
-                                        <img src={popupData.src} alt="product" />
+                                        <img src={popupData.productimg} alt="product" />
                                     </a>
                                 </div>
                                 <div className={`${abI.goshopname}`}>

@@ -34,13 +34,13 @@ hr {
 .aboutUsCard li{
     display: flex;
     justify-content: center;
-    margin: 0.5rem;
+    padding: 0.5rem;
 }
-/* .AUcard{
-    border: 1px solid var(--sub-gray);
-} */
+.AUcard{
+    width: 100%;
+}
 .AUcard img{
-    max-width: 30vw;
+    width: 100%;
 }
 .aboutSentence{
     width: 100%;
@@ -301,25 +301,4 @@ hr {
     .cardContent br{
         display: block;
     }
-
-    /* .sentence2 img{
-        width: 20%;
-        height: auto;
-        padding-bottom: 0.5rem;
-    }
-    .sentence2Content{
-        width: 90vw;
-        padding: 1rem 0;
-    } */
 }
-
-@media(min-width:1400px) {
-    .AUcard img {
-        max-width: 20vw;
-    }
-}
-/* @media(min-width:1400px){
-    .sentence2Content{
-        max-width: 50vw;
-    }
-} */

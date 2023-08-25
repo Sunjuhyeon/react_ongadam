@@ -20,7 +20,7 @@ export const AboutInsta = (props) => {
 
     return (
         <section id={props.id} className={`${abI.sectionbg} position-relative`}>
-            <div className='sectioncontainer'>
+            <div className='sectioncontainer container-lg'>
                 <div className={`${abI.title} d-sm-flex`}>
                     <p className={`${abI.titlename} order-sm-2 ms-sm-3`}>@ongadam_official</p>
                     <p className={`${abI.maintitle} order-sm-1`}>INSTAGRAM</p>
@@ -37,7 +37,7 @@ export const AboutInsta = (props) => {
                             props.info.contentsdb.about.aboutInsta.map((v, i) => {
                                 return (
                                     <SwiperSlide onClick={() => setShowpopup(i)}>
-                                        <div>
+                                        <div className={`${abI.hoverbg} hoverbg`}>
                                             <img src={v.src} alt="instaImg" />
                                         </div>
                                     </SwiperSlide>
