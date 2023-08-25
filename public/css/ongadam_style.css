@@ -46,16 +46,7 @@
   font-weight: 500 !important;
 }
 
-body.scroll #button {
-  position: fixed;
-  bottom: 20%;
-  right: 10px;
-  z-index: 100000;
-}
-body.scroll #button #formbtn {
-  margin-bottom: 0.75rem;
-}
-body.scroll #button #topbtn .topButton {
+body.scroll #button #topbtn {
   opacity: 1 !important;
   visibility: visible !important;
 }
@@ -193,7 +184,7 @@ body #contents #slide .swiper .swiper-button-prev::after {
 }
 @media (min-width: 1400px) {
   body #contents #slide .swiper .swiper-button-prev {
-    left: 20%;
+    left: 5%;
   }
 }
 body #contents #slide .swiper .swiper-button-next {
@@ -206,7 +197,7 @@ body #contents #slide .swiper .swiper-button-next::after {
 }
 @media (min-width: 1400px) {
   body #contents #slide .swiper .swiper-button-next {
-    right: 20%;
+    right: 5%;
   }
 }
 body #contents #slide .swiper .swiper-slide {
@@ -217,7 +208,6 @@ body #contents #slide .swiper .swiper-slide.swiper-slide-active {
   opacity: 1;
 }
 body #contents #slide .swiper .swiper-slide a {
-  max-width: 1100px;
   height: 50vh;
 }
 @media (min-width: 991px) {
@@ -231,19 +221,31 @@ body #contents #slide .swiper .swiper-slide a {
   }
 }
 body #contents #slide .swiper .swiper-slide a .title0 {
+  font-weight: 300;
   font-family: "SBAggro", sans-serif;
-  font-weight: 500;
+}
+body #contents #slide .swiper .swiper-slide a .title0 em {
   color: rgb(0, 154, 36);
+  font-weight: 300;
+  font-family: "SBAggro", sans-serif;
 }
 body #contents #slide .swiper .swiper-slide a .title1 {
   font-family: "SBAggro", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
+}
+body #contents #slide .swiper .swiper-slide a .title1 em {
   color: rgb(0, 126, 96);
+  font-weight: 300;
+  font-family: "SBAggro", sans-serif;
 }
 body #contents #slide .swiper .swiper-slide a .title2 {
   font-family: "SBAggro", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
+}
+body #contents #slide .swiper .swiper-slide a .title2 em {
   color: #005db9;
+  font-weight: 300;
+  font-family: "SBAggro", sans-serif;
 }
 body #contents #slide .swiper .swiper-slide .slide0 {
   background-image: url(/img/slide0.png);
@@ -282,96 +284,53 @@ body #contents #review .swiper .swiper-pagination-progressbar .swiper-pagination
 body #contents #event ul {
   margin: 0 auto;
 }
-@media (max-width: 991px) {
-  body #contents #event ul {
-    width: 80vw;
+body #contents #event ul li {
+  width: 33.3333333333%;
+}
+@media (max-width: 768px) {
+  body #contents #event ul li {
+    width: 80%;
   }
 }
 @media (max-width: 576px) {
-  body #contents #event ul {
-    width: 95vw;
+  body #contents #event ul li {
+    width: 100%;
   }
 }
-body #contents #event ul li .event0 {
-  width: 800px;
+body #contents #event ul li .eventbigbox {
+  width: 100%;
 }
-@media (max-width: 1570px) {
-  body #contents #event ul li .event0 {
-    width: 600px;
-  }
+body #contents #event ul li .eventbigbox .eventimg {
+  width: 100%;
+  height: auto;
 }
-@media (max-width: 1220px) {
-  body #contents #event ul li .event0 {
-    width: 450px;
-  }
+body #contents #event ul li .eventbigbox .eventimg a {
+  width: 100%;
+  padding-top: 107%;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-@media (max-width: 991px) {
-  body #contents #event ul li .event0 {
-    width: 80vw;
-  }
+body #contents #event ul li .eventbigbox .eventimg a:hover {
+  filter: brightness(0.5);
+  transition: 0.4s;
 }
-@media (max-width: 576px) {
-  body #contents #event ul li .event0 {
-    width: 95vw;
-  }
+body #contents #event ul li .eventbigbox .event0 a {
+  background-image: url(/img/event0-1.png);
 }
-body #contents #event ul li .event0 a {
-  background-image: url(/img/event0.png);
+body #contents #event ul li .eventbigbox .event1 a {
+  background-image: url(/img/event1-1.png);
 }
-body #contents #event ul li .event1 {
-  width: 400px;
-}
-@media (max-width: 1570px) {
-  body #contents #event ul li .event1 {
-    width: 300px;
-  }
-}
-@media (max-width: 1220px) {
-  body #contents #event ul li .event1 {
-    width: 225px;
-  }
-}
-@media (max-width: 991px) {
-  body #contents #event ul li .event1 {
-    width: 50vw;
-  }
-}
-@media (max-width: 576px) {
-  body #contents #event ul li .event1 {
-    width: 95vw;
-  }
-}
-body #contents #event ul li .event1 a {
-  background-image: url(/img/event1.png);
-}
-body #contents #event ul li .event2 {
-  width: 400px;
-}
-@media (max-width: 1570px) {
-  body #contents #event ul li .event2 {
-    width: 300px;
-  }
-}
-@media (max-width: 1220px) {
-  body #contents #event ul li .event2 {
-    width: 225px;
-  }
-}
-@media (max-width: 991px) {
-  body #contents #event ul li .event2 {
-    width: 50vw;
-  }
-}
-@media (max-width: 576px) {
-  body #contents #event ul li .event2 {
-    width: 95vw;
-  }
-}
-body #contents #event ul li .event2 a {
-  background-image: url(/img/event2.png);
+body #contents #event ul li .eventbigbox .event2 a {
+  background-image: url(/img/event2-1.png);
 }
 body #contents #about #abouthd .sentence2 {
   background-image: url(/img/truckImg.png);
+}
+body #contents #about #aboutyoutube .textContent p {
+  font-family: "SBAggro", sans-serif;
+  font-weight: 300;
 }
 body #contents #about #aboutyoutube .youtube {
   padding-bottom: 56.25%;
@@ -386,28 +345,32 @@ body #contents #about #aboutyoutube .youtube iframe {
   height: 100%;
 }
 body #contents #about #aboutinsta .sectioncontainer {
-  width: 92.5%;
   margin: 0 auto;
-  max-width: 1200px;
 }
 body #contents #about #aboutinsta .sectioncontainer .swiper {
   margin-top: 40px;
 }
 body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide {
-  width: 250px;
-  height: 250px;
+  width: 350px;
   padding-right: 5px;
+}
+@media (max-width: 991px) {
+  body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide {
+    width: 250px;
+  }
 }
 @media (max-width: 576px) {
   body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide {
     width: 200px;
-    height: 200px;
   }
 }
 body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
-  height: 100%;
   cursor: pointer;
+}
+body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide img:hover {
+  filter: brightness(0.5);
+  transition: 0.4s;
 }
 body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide:not(:first-child) {
   padding-left: 5px;
@@ -438,7 +401,7 @@ body #contents #form:before {
   background-color: #337005;
   border-radius: 0 70px 0 0;
   top: -40px;
-  z-index: 1000;
+  z-index: 500;
 }
 body #contents #form:after {
   content: "";
@@ -464,7 +427,32 @@ body #contents #form .subtop .arrow {
     height: 15px;
   }
 }
-body #contents #button .topButton .topButtonsvg circle {
+body #contents #button {
+  position: fixed;
+  bottom: 20%;
+  right: 10px;
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #contents #button #formbtn {
+  margin-bottom: 0.75rem;
+}
+body #contents #button #formbtn .formbutton {
+  background-image: url(/img/formbutton.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #195a3c;
+}
+body #contents #button #topbtn {
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+body #contents #button #topbtn .topButton .topButtonsvg circle {
   stroke-dasharray: 0;
   stroke-dashoffset: 0;
   stroke-width: 2;
