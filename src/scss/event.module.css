@@ -7,10 +7,7 @@
     font-size: 2rem;
     text-align: center;
     color: #333;
-    font-weight: 300;
-}
-.titlename p em{
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .section ul{
@@ -32,11 +29,6 @@
 }
 .smE{
     background-color: #edece8;
-}
-.textbox{
-    width: 300px;
-    max-width: 300px;
-    height: 100%;
 }
 .textbox p{
     margin-bottom: 0;
@@ -65,7 +57,9 @@
     width: 2rem;
     margin-left: 0.5rem;
 }
-
+.textbigbox{
+    height: 50px;
+}
 /* 반응형 576px 이하일 때 나오는 text */
 .smtext{
     padding-top: 0.25rem;
@@ -89,10 +83,16 @@
     word-spacing: -2px;
 }
 
+
+
+/* 새로운 스타일 */
+
+
+
 @media(max-width: 576px){
-    .textbox{
+    /* .textbox{
         display: none !important;
-    }
+    } */
 
     .smE{
         background-color: rgba(255, 255, 255, 0);
@@ -103,6 +103,15 @@
         margin-bottom: 0.5rem;
         padding-bottom: 0.5rem;
     }
+    /* .eventlist {
+        width: 90vw !important;
+    } */
+}
+@media(max-width:768px){
+    /* .eventlist{
+        width: 70vw;
+    } */
+
 }
 @media(max-width:991px) {
     .section {
