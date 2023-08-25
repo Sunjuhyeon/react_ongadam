@@ -23,7 +23,7 @@ function Slide(props) {
                         slidesPerView: 1.3
                     }
                     ,1400: {
-                        slidesPerView : 1.75
+                        slidesPerView : 1.2
                     }
                 }}
                 
@@ -35,8 +35,21 @@ function Slide(props) {
                         return (
                             <SwiperSlide className={`${slide.swiperslide}`}>
                                 <a href={v.link} className={`${v.cls}`}>
-                                    <p className={`mb-0 ${v.titlecls} ${slide.title}`}>{v.title}</p>
-                                    <p className={`mb-0 ${slide.subtitle}`}>{v.subtitle}</p>
+                                    <div className={`${slide.textbox}`}>
+                                        <span className={`${slide.category}`}>{v.category}</span>
+                                        <p className={`mb-0 ${v.titlecls} ${slide.title}`}>
+                                            {
+                                                v.title.split("<em>").map((em,idx) => {
+                                                    if (idx % 2 === 0){
+                                                        return em
+                                                    } else{
+                                                        return <em key={idx}>{em}</em>
+                                                    }
+                                                })
+                                            }
+                                        </p>
+                                        <p className={`mb-0 ${slide.subtitle}`}>{v.subtitle}</p>
+                                    </div>
                                 </a>
                             </SwiperSlide>
                         )
