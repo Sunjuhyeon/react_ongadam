@@ -33,10 +33,11 @@
 .textbox p{
     margin-bottom: 0;
     word-break: keep-all;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 500;
     word-spacing: -2px;
-    line-height: 1.3rem;
+    padding-top: 0.5rem;
+    line-height: 20px;
 }
 .textbox p em{
     color: #337005;
@@ -107,15 +108,14 @@
         width: 90vw !important;
     } */
 }
-@media(max-width:768px){
-    /* .eventlist{
-        width: 70vw;
-    } */
-
-}
 @media(max-width:991px) {
     .section {
             padding-top: 4rem;
             padding-bottom: 2rem;
+    }
+}
+@media(max-width:1400px){
+    .textbox p{
+        font-size: 18px !important;
     }
 }

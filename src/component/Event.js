@@ -32,13 +32,6 @@ function Event(props) {
                                                 </p>
                                             );
                                         })}
-                                        {
-                                            v.subtitle.split("<br>").map((br, idx) => {
-                                                return (
-                                                    <p className={`subtitle${idx}`}>{br}</p>
-                                                )
-                                            })
-                                        }
                                     </div>
                                 </div>
                             </div>
