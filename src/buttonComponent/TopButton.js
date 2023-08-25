@@ -26,7 +26,7 @@ function TopButton(props) {
 
     return (
         <div id={props.id}>
-            <a href='#top' className={`nav-link topButton ${btn.topButton}`}>
+            <a href='#top' className={`nav-link topButton`}>
                 <svg viewBox="0 0 56 56" className={`topButtonsvg ${btn.topButtonsvg}`}>
                     <g fill="none" fill-rule="evenodd">
                         <circle stroke-opacity=".05" stroke="#000" fill="#FFF" cx="28" cy="28" r="27.5" />
