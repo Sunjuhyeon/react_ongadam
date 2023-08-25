@@ -1,17 +1,14 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import fbtn from '../scss/formbutton.module.css'
-import { useForm } from "react-hook-form";
+import Form from '../component/Form'
 
 function FormButton(props) {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
-
-    console.log(watch("example"));
   return (
-    <div id={props.id}>
-        <button className={`${fbtn.button}`}>
-            
-        </button>
+    <div>
+      <div id={props.id}>
+          <a href='#form' className={`${fbtn.formbutton} formbutton nav-link`}>
+          </a>
+      </div>
     </div>
   )
 }

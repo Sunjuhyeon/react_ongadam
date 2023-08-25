@@ -1,7 +1,6 @@
-.button{
-    width: 56px;
-    height: 56px;
+.formbutton{
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     border: 0;
-    background-color: green;
 }

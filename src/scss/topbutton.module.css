@@ -14,12 +14,6 @@
     cursor: pointer;
 }
 
-.topButton {
-    transition: 0.5s;
-    opacity: 0;
-    visibility: hidden;
-}
-
 .topButtonsvg {
     width: 56px;
     height: 56px;
