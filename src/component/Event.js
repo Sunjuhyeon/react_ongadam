@@ -31,7 +31,8 @@ function Event(props) {
                                                     })}
                                                 </p>
                                             );
-                                        })}
+
+})}
                                     </div>
                                 </div>
                             </div>
