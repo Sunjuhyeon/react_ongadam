@@ -31,6 +31,9 @@ hr {
 }
 
 /* about섹션 회사 소개 카드 */
+.aboutUsCard{
+    padding: 0 0.2rem;
+}
 .aboutUsCard li{
     display: flex;
     justify-content: center;

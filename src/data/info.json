@@ -163,7 +163,7 @@
                     "subtitle": "남양주 인기카페에서 무료체험&무료커피 맛보러 GoGo~",
                     "link": "",
                     "imgcls": "event0 eventimg",
-                    "textcls": "ps-2",
+                    "textcls": "",
                     "smtext": "남양주 인기카페 <em>라온숨 X 온가담<em> 콜라보!!",
                     "smtextsub": "남양주 인기카페에서 무료체험&무료커피 맛보러 GoGo~"
                 },
@@ -172,7 +172,7 @@
                     "subtitle": "07.01~07.04 단 3일!!",
                     "link": "",
                     "imgcls": "event1 eventimg",
-                    "textcls": "ps-2",
+                    "textcls": "",
                     "smtext": "캠핑족을 위한 최대 <em>~48%<em> 최강공구 오픈!!",
                     "smtextsub": "07.01~07.04 단 3일!!"
                 },
@@ -181,7 +181,7 @@
                     "subtitle": "지루한 신청 절차? No! 3분만에 신청하러 가기!!",
                     "link": "",
                     "imgcls": "event2 eventimg",
-                    "textcls": "ps-2",
+                    "textcls": "",
                     "smtext": "인기상품 <em>무료로 데려갈 사람 손~!!<em>",
                     "smtextsub": "지루한 신청 절차? No! 3분만에 신청하러 가기!!"
                 }

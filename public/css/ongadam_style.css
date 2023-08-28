@@ -281,48 +281,35 @@ body #contents #review .swiper .swiper-pagination {
 body #contents #review .swiper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background-color: #9C9494 !important;
 }
-body #contents #event ul {
+body #contents #event .mySwiper {
   margin: 0 auto;
 }
-body #contents #event ul li {
-  width: 33.3333333333%;
-}
-@media (max-width: 768px) {
-  body #contents #event ul li {
-    width: 80%;
-  }
-}
-@media (max-width: 576px) {
-  body #contents #event ul li {
-    width: 100%;
-  }
-}
-body #contents #event ul li .eventbigbox {
+body #contents #event .mySwiper .swiper-slide .eventbigbox {
   width: 100%;
 }
-body #contents #event ul li .eventbigbox .eventimg {
+body #contents #event .mySwiper .swiper-slide .eventbigbox .eventimg {
   width: 100%;
   height: auto;
 }
-body #contents #event ul li .eventbigbox .eventimg a {
+body #contents #event .mySwiper .swiper-slide .eventbigbox .eventimg a {
   width: 100%;
   padding-top: 107%;
   display: block;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
-body #contents #event ul li .eventbigbox .eventimg a:hover {
+body #contents #event .mySwiper .swiper-slide .eventbigbox .eventimg a:hover {
   filter: brightness(0.5);
   transition: 0.4s;
 }
-body #contents #event ul li .eventbigbox .event0 a {
+body #contents #event .mySwiper .swiper-slide .eventbigbox .event0 a {
   background-image: url(/img/event0-1.png);
 }
-body #contents #event ul li .eventbigbox .event1 a {
+body #contents #event .mySwiper .swiper-slide .eventbigbox .event1 a {
   background-image: url(/img/event1-1.png);
 }
-body #contents #event ul li .eventbigbox .event2 a {
+body #contents #event .mySwiper .swiper-slide .eventbigbox .event2 a {
   background-image: url(/img/event2-1.png);
 }
 body #contents #about #abouthd .sentence2 {

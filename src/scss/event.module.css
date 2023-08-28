@@ -10,12 +10,12 @@
     font-weight: 500;
 }
 
-.section ul{
+.section .eventbox{
     margin: 0;
-    padding: 0;
+    padding: 0 0.2rem;
 }
 
-.section ul li .eventlist a{
+.eventlist a{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,9 +23,10 @@
     padding-top: 75%;
 }
 
-.section ul{
+.section .eventbox{
     justify-content: center;
     align-items: center;
+    padding: 0 0.7rem;
 }
 .smE{
     background-color: #edece8;
