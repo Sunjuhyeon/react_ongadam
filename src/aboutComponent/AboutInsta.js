@@ -22,8 +22,8 @@ export const AboutInsta = (props) => {
         <section id={props.id} className={`${abI.sectionbg} position-relative`}>
             <div className='sectioncontainer container-lg'>
                 <div className={`${abI.title} d-sm-flex`}>
-                    <p className={`${abI.titlename} order-sm-2 ms-sm-3`}>@ongadam_official</p>
-                    <p className={`${abI.maintitle} order-sm-1`}>INSTAGRAM</p>
+                    <p className={`${abI.maintitle} pb-1 pb-sm-0`}>INSTAGRAM</p>
+                    <p className={`${abI.titlename} ms-sm-2`}>@ongadam_official</p>
                 </div>
                 <div>
                     <Swiper
@@ -39,6 +39,10 @@ export const AboutInsta = (props) => {
                                     <SwiperSlide onClick={() => setShowpopup(i)}>
                                         <div className={`${abI.hoverbg} hoverbg`}>
                                             <img src={v.src} alt="instaImg" />
+                                            <div className={`instatext`}>
+                                                <span>@ongadam_official</span>
+                                                <span>click Me!</span>
+                                            </div>
                                         </div>
                                     </SwiperSlide>
                                 )
