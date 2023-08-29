@@ -15,12 +15,12 @@
 }
 
 .sentence1 span{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: var(--main-green);
 }
 .sentence1 p{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 hr {
