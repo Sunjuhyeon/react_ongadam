@@ -4,74 +4,34 @@ import e from '../scss/event.module.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-// import { Navigation } from 'swiper/modules';
+import 'swiper/css/pagination';
+import { Pagination, Navigation } from 'swiper/modules';
 
 function Event(props) {
-
-    const [eventSwiper, setEventSwiper] = useState(null);
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-        function initSwiper(){
-            if(eventSwiper){
-                eventSwiper.destroy();
-            };
-
-            if(screenWidth > 991){
-                setEventSwiper(
-                    new Swiper('.mySwiper', {
-                        slidesPerView: 3,
-                        spaceBetween: 10,
-                    })
-                );
-            } else{
-                setEventSwiper(
-                    new Swiper('.mySwiper', {
-                        slidesPerView: 1.5,
-                        spaceBetween: 10,
-                        loop : true,
-                        centeredSlides: true,
-                    })
-                );
-            }
-        }
-
-        initSwiper();
-
-        window.addEventListener('resize', () => {
-            setScreenWidth(window.innerWidth);
-        });
-
-        return() => {
-            if(eventSwiper){
-                eventSwiper.destroy();
-            }
-            window.removeEventListener('resize', () => {
-                setScreenWidth(window.innerWidth);
-            });
-        };
-    }, [screenWidth, eventSwiper]);
-
-
-    
-    
   return (
     <section id={props.id} className={`${e.section}`}>
         <div className={`${e.titlename}`}>
-            <p>진행중인 이벤트</p>
+            <p>이벤트 소식</p>
         </div>
         <Swiper 
-        // navigation={true}
-        // slidesPerView={1.5}
-        // spaceBetween={10}
-        // centeredSlides={true}
-        // modules={[Navigation]}
-        // breakpoints={{
-        //     768: {
-        //         slidesPerView: 3,
-        //         centeredSlides:false,
-        //     }
-        // }}
+        pagination={{
+            type: 'fraction',
+        }}
+        navigation={true}
+        slidesPerView={1.2}
+        spaceBetween={10}
+        centeredSlides={true}
+        modules={[Navigation, Pagination]}
+        breakpoints={{
+            576:{
+                slidesPerView: 1.5,
+                centeredSlides: true,
+            },
+            768: {
+                slidesPerView: 3,
+                centeredSlides: false,
+            }
+        }}
         className={`mySwiper ${e.eventbox} container-lg d-flex flex-column flex-md-row justify-content-md-between justify-content-center align-items-center`}>
             {
                 props.info.contentsdb.event.list.map((v, i) => {
@@ -79,8 +39,15 @@ function Event(props) {
                         <SwiperSlide className={`col-md-4`} key={i}>
                             <li className={`${e.eventlist} d-sm-flex align-itmes-center`}>
                                 <div className='eventbigbox'>
-                                    <div className={`${v.imgcls}`}>
-                                        <a href=""></a>
+                                    <div className='position-relative'>
+                                        <div className={`${v.imgcls}`}>
+                                            <a href=""></a>
+                                        </div>
+                                        <div className='eventmore'>
+                                            <a href="">
+                                                <p>더보기</p>
+                                            </a>
+                                        </div>
                                     </div>
                                     <div className={`${v.textcls} ${e.textbox}`}>
                                         <div className={`${e.textbigbox}`}>
@@ -102,6 +69,7 @@ function Event(props) {
                                         </div>
                                     </div>
                                 </div>
+                                
                             </li>
                         </SwiperSlide>
                     )
