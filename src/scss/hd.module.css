@@ -43,12 +43,7 @@
     align-items: center;
 }
 .mainhead{
-    max-width: 50vw;
-}
-@media(max-width:1400px){
-    .mainhead{
-        max-width: 70vw;
-    }
+    max-width: 70vw;
 }
 @media(max-width:991px){
     .mainhead{
