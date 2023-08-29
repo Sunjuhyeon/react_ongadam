@@ -256,7 +256,7 @@ body {
                 height: fit-content;
 
                 .swiper-button-prev {
-                    background-image: url(/img/icon_arrow1.png);
+                    background-image: url(/img/icon_arrow0-1.png);
                     background-position: center;
                     background-repeat: no-repeat;
 
@@ -270,7 +270,7 @@ body {
                 }
 
                 .swiper-button-next {
-                    background-image: url(/img/icon_arrow0.png);
+                    background-image: url(/img/icon_arrow0-2.png);
                     background-position: center;
                     background-repeat: no-repeat;
 
@@ -289,6 +289,18 @@ body {
 
                     &.swiper-slide-active {
                         opacity: 1;
+                        .titlebox{
+                            transition: transform 0.7s ease-in, opacity 0.7s ease-in;
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                        .categorybox{
+                            transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+                            opacity: 1;
+                            transform: translateY(0);
+                            transition-delay: 0.5s;
+                            transition-property: transform, opacity;
+                        }
                     }
 
                     a {
@@ -301,7 +313,14 @@ body {
                         @media(min-width:1400px) {
                             height: 80vh;
                         }
-
+                        .titlebox{
+                            opacity: 0;
+                            transform: translateY(30px);
+                        }
+                        .categorybox{
+                            opacity: 0;
+                            transform: translateY(-15px);
+                        }
                         .title0 {
                             font-weight: 300;
                             font-family: 'SBAggro', sans-serif;
@@ -384,10 +403,77 @@ body {
 
         #event {
             .mySwiper {
+                padding: 1.5rem 0.7rem;
                 margin: 0 auto;
+                .swiper-button-prev::after,
+                .swiper-button-next::after{
+                    display: none;
+                }
+                .swiper-button-prev,
+                .swiper-button-next{
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    transform: translateY(-50%);
+                }
+                .swiper-button-prev{
+                    background-image: url(/img/icon_arrow1-1.png);
+                }
+                .swiper-button-next{
+                    background-image: url(/img/icon_arrow1-2.png);
+                }
+                .swiper-pagination{
+                    top: 0;
+                    width: fit-content;
+                    height: fit-content;
+                    left: auto !important;
+                    right: 19% !important;
+                    @media(max-width:576px){
+                        right: 12% !important;
+                    }
+                    .swiper-pagination-current{
+                        font-family: "Montserrat", sans-serif;
+                        color: #333;
+                    }
+                    .swiper-pagination-total{
+                        font-family: "Montserrat", sans-serif;
+                        color: #9C9494;
+                    }
+                }
                 .swiper-slide{
-
                     // background-color: #f2f2f2;
+                    .eventmore{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        width: 100%;
+                        &:hover{
+                            a{
+                                background-color: rgb(0, 0, 0, 0.5);
+                            }
+                            p{
+                                display: block !important;
+                            }
+                        }
+                        a{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 100%;
+                            transition: 0.3s;
+                            p{
+                                display: none;
+                                color: #fff;
+                                margin-bottom: 0;
+                                font-size: 1.2rem;
+                                font-weight: 500;
+                                border-bottom: 1px solid #fff;
+                                transition: 0.3s;
+                            }
+                        }
+                    }
                     .eventbigbox{
                         width: 100%;
                         .eventimg{
@@ -446,7 +532,15 @@ body {
                     padding-bottom: 56.25%;
                     position: relative;
                     width: 100%;
-    
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        border: 1px solid #fff;
+                        z-index: 10000;
+                    }
                     iframe {
                         top: 0;
                         left: 0;
@@ -468,27 +562,55 @@ body {
                         .swiper-wrapper {
                             .swiper-slide {
                                 width: 350px;
-                                padding-right: 5px;
+                                overflow: hidden !important;
+                                margin-right: 5px;
                                 
                                 @media(max-width:991px) {
                                     width: 250px;
                                 }
                                 @media(max-width:576px) {
                                     width: 200px;
+                                    &:hover{
+                                        .instatext{
+                                            height: 50px !important;
+                                            line-height: 1.3rem !important;
+                                        }
+                                    }
                                 }
-
+                                &:hover{
+                                    img{
+                                        scale: 1.1;
+                                    }
+                                    .instatext{
+                                        height: 70px;
+                                    }
+                                }
                                 img {
                                     width: 100%;
                                     cursor: pointer;
-                                    &:hover{
-                                        filter: brightness(0.5);
-                                        transition: 0.4s;
+                                    transition: 0.3s;
+                                }
+                                .instatext{
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    line-height: 1.5rem;
+                                    background-color: white;
+                                    height: 0;
+                                    width: 100%;
+                                    transition: 0.3s;
+                                    overflow: hidden;
+                                    span{
+                                        color: #4d5866;
                                     }
                                 }
                             }
-
                             .swiper-slide:not(:first-child) {
-                                padding-left: 5px;
+                                margin-left: 5px;
                             }
 
                         }

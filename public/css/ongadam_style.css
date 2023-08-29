@@ -175,7 +175,7 @@ body #contents #slide .swiper {
   height: fit-content;
 }
 body #contents #slide .swiper .swiper-button-prev {
-  background-image: url(/img/icon_arrow1.png);
+  background-image: url(/img/icon_arrow0-1.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -188,7 +188,7 @@ body #contents #slide .swiper .swiper-button-prev::after {
   }
 }
 body #contents #slide .swiper .swiper-button-next {
-  background-image: url(/img/icon_arrow0.png);
+  background-image: url(/img/icon_arrow0-2.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -207,6 +207,18 @@ body #contents #slide .swiper .swiper-slide {
 body #contents #slide .swiper .swiper-slide.swiper-slide-active {
   opacity: 1;
 }
+body #contents #slide .swiper .swiper-slide.swiper-slide-active .titlebox {
+  transition: transform 0.7s ease-in, opacity 0.7s ease-in;
+  opacity: 1;
+  transform: translateY(0);
+}
+body #contents #slide .swiper .swiper-slide.swiper-slide-active .categorybox {
+  transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+  transition-property: transform, opacity;
+}
 body #contents #slide .swiper .swiper-slide a {
   height: 50vh;
 }
@@ -219,6 +231,14 @@ body #contents #slide .swiper .swiper-slide a {
   body #contents #slide .swiper .swiper-slide a {
     height: 80vh;
   }
+}
+body #contents #slide .swiper .swiper-slide a .titlebox {
+  opacity: 0;
+  transform: translateY(30px);
+}
+body #contents #slide .swiper .swiper-slide a .categorybox {
+  opacity: 0;
+  transform: translateY(-15px);
 }
 body #contents #slide .swiper .swiper-slide a .title0 {
   font-weight: 300;
@@ -282,7 +302,75 @@ body #contents #review .swiper .swiper-pagination-progressbar .swiper-pagination
   background-color: #9C9494 !important;
 }
 body #contents #event .mySwiper {
+  padding: 1.5rem 0.7rem;
   margin: 0 auto;
+}
+body #contents #event .mySwiper .swiper-button-prev::after,
+body #contents #event .mySwiper .swiper-button-next::after {
+  display: none;
+}
+body #contents #event .mySwiper .swiper-button-prev,
+body #contents #event .mySwiper .swiper-button-next {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translateY(-50%);
+}
+body #contents #event .mySwiper .swiper-button-prev {
+  background-image: url(/img/icon_arrow1-1.png);
+}
+body #contents #event .mySwiper .swiper-button-next {
+  background-image: url(/img/icon_arrow1-2.png);
+}
+body #contents #event .mySwiper .swiper-pagination {
+  top: 0;
+  width: fit-content;
+  height: fit-content;
+  left: auto !important;
+  right: 19% !important;
+}
+@media (max-width: 576px) {
+  body #contents #event .mySwiper .swiper-pagination {
+    right: 12% !important;
+  }
+}
+body #contents #event .mySwiper .swiper-pagination .swiper-pagination-current {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+body #contents #event .mySwiper .swiper-pagination .swiper-pagination-total {
+  font-family: "Montserrat", sans-serif;
+  color: #9C9494;
+}
+body #contents #event .mySwiper .swiper-slide .eventmore {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+body #contents #event .mySwiper .swiper-slide .eventmore:hover a {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body #contents #event .mySwiper .swiper-slide .eventmore:hover p {
+  display: block !important;
+}
+body #contents #event .mySwiper .swiper-slide .eventmore a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+body #contents #event .mySwiper .swiper-slide .eventmore a p {
+  display: none;
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-bottom: 1px solid #fff;
+  transition: 0.3s;
 }
 body #contents #event .mySwiper .swiper-slide .eventbigbox {
   width: 100%;
@@ -324,6 +412,15 @@ body #contents #about #aboutyoutube .youtube {
   position: relative;
   width: 100%;
 }
+body #contents #about #aboutyoutube .youtube::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border: 1px solid #fff;
+  z-index: 10000;
+}
 body #contents #about #aboutyoutube .youtube iframe {
   top: 0;
   left: 0;
@@ -339,7 +436,8 @@ body #contents #about #aboutinsta .sectioncontainer .swiper {
 }
 body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide {
   width: 350px;
-  padding-right: 5px;
+  overflow: hidden !important;
+  margin-right: 5px;
 }
 @media (max-width: 991px) {
   body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide {
@@ -350,17 +448,42 @@ body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swi
   body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide {
     width: 200px;
   }
+  body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide:hover .instatext {
+    height: 50px !important;
+    line-height: 1.3rem !important;
+  }
+}
+body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide:hover img {
+  scale: 1.1;
+}
+body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide:hover .instatext {
+  height: 70px;
 }
 body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   cursor: pointer;
+  transition: 0.3s;
 }
-body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide img:hover {
-  filter: brightness(0.5);
-  transition: 0.4s;
+body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide .instatext {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5rem;
+  background-color: white;
+  height: 0;
+  width: 100%;
+  transition: 0.3s;
+  overflow: hidden;
+}
+body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide .instatext span {
+  color: #4d5866;
 }
 body #contents #about #aboutinsta .sectioncontainer .swiper .swiper-wrapper .swiper-slide:not(:first-child) {
-  padding-left: 5px;
+  margin-left: 5px;
 }
 body #contents #about #aboutinsta .sectioncontainer .popup {
   background-color: black !important;
