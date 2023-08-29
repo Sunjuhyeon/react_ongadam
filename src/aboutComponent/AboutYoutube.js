@@ -19,15 +19,17 @@ export const AboutYoutube = (props) => {
                   </iframe>
               </div>
               <div className={`${abU.script} order-lg-1`}>
-                  <p>
-                        따듯할 온(溫)+더할 가(加)+편안할 담(擔)
-                  </p>
-                  <p>
-                        삶의 따뜻함과 편안함을 더해줄 수 있는
-                  </p>
-                  <p>
-                        아이템을 끊임없이 연구하는 브랜드입니다
-                  </p>
+                  <div className='lh-sm'>
+                      <p>
+                            따듯할 온(溫)+더할 가(加)+편안할 담(擔)
+                      </p>
+                      <p>
+                            삶의 따뜻함과 편안함을 더해줄 수 있는
+                      </p>
+                      <p>
+                            아이템을 끊임없이 연구하는 브랜드입니다
+                      </p>
+                  </div>
                   <a href="">아이디어 상품 더 보러가기</a>
               </div>
           </div>
