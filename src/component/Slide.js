@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 
 import slide from '../scss/slide.module.css'
 
@@ -18,6 +18,10 @@ function Slide(props) {
                 loop={true}
                 loopedSlides={2}
                 spaceBetween={0}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 breakpoints={{
                     650:{
                         slidesPerView: 1.3
@@ -27,28 +31,32 @@ function Slide(props) {
                     }
                 }}
                 
-                modules={[ Navigation]}
+                modules={[Autoplay, Navigation]}
                 className={`mySwiper ${slide.swiper}`}
             >
                 {
                     props.info.contentsdb.slide.map((v, i) => {
                         return (
-                            <SwiperSlide className={`${slide.swiperslide}`}>
+                            <SwiperSlide key={i} className={`${slide.swiperslide}`}>
                                 <a href={v.link} className={`${v.cls}`}>
                                     <div className={`${slide.textbox}`}>
-                                        <span className={`${slide.category}`}>{v.category}</span>
-                                        <p className={`mb-0 ${v.titlecls} ${slide.title}`}>
-                                            {
-                                                v.title.split("<em>").map((em,idx) => {
-                                                    if (idx % 2 === 0){
-                                                        return em
-                                                    } else{
-                                                        return <em key={idx}>{em}</em>
-                                                    }
-                                                })
-                                            }
-                                        </p>
-                                        <p className={`mb-0 ${slide.subtitle}`}>{v.subtitle}</p>
+                                        <div className='categorybox'>
+                                            <span className={`${slide.category}`}>{v.category}</span>
+                                        </div>
+                                        <div className='titlebox'>
+                                            <p className={`mb-0 ${v.titlecls} ${slide.title}`}>
+                                                {
+                                                    v.title.split("<em>").map((em,idx) => {
+                                                        if (idx % 2 === 0){
+                                                            return em
+                                                        } else{
+                                                            return <em key={idx}>{em}</em>
+                                                        }
+                                                    })
+                                                }
+                                            </p>
+                                            <p className={`mb-0 ${slide.subtitle}`}>{v.subtitle}</p>
+                                        </div>
                                     </div>
                                 </a>
                             </SwiperSlide>
