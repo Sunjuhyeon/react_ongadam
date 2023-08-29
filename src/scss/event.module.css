@@ -15,18 +15,9 @@
     padding: 0 0.2rem;
 }
 
-.eventlist a{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-    padding-top: 75%;
-}
-
 .section .eventbox{
     justify-content: center;
     align-items: center;
-    padding: 0 0.7rem;
 }
 .smE{
     background-color: #edece8;
