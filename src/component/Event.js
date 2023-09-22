@@ -45,7 +45,7 @@ function Event(props) {
                                         </div>
                                         <div className='eventmore'>
                                             <a href="">
-                                                <p>더보기</p>
+                                                <p>더 알아보기</p>
                                             </a>
                                         </div>
                                     </div>

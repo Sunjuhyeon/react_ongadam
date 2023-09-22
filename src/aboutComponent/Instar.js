@@ -8,7 +8,7 @@ function Instar(props) {
         <div className='popup'>
             <div className={`${abI.windowbg}`}></div>
             <div className={`${abI.popup}`}>
-                <div className='poprel position-relative py-5 px-5 h-100'>
+                <div className='poprel position-relative py-3 py-sm-5 px-sm-5 h-100'>
                     <div className={`popupclose ${abI.close}`} onClick={props.closePopup}></div>
                     <div className={`${abI.popupbox} d-lg-flex justify-content-center align-items-center`}>
                         <div className={`popupleft`}>
